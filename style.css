@@ -646,10 +646,66 @@ footer a {
     color: #647069;
 }
 /* =========================
+   SCHOLAR STATUS
+========================= */
+
+.single-team {
+    grid-template-columns: minmax(280px, 380px);
+    justify-content: center;
+}
+
+.two-team {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 850px;
+    margin: auto;
+}
+
+.research-topic {
+    margin-top: 15px;
+    line-height: 1.65;
+}
+
+.status-badge {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.current-status {
+    background: #e4f1df;
+    color: #31583c;
+}
+
+.submitted-status {
+    background: #eef0e3;
+    color: #5d6534;
+}
+
+.completed-status {
+    background: #e1eee8;
+    color: #315c4a;
+}
+
+.scholar-actions {
+    margin-top: 20px;
+}
+
+.alumni-card {
+    position: relative;
+}
+/* =========================
    MOBILE RESPONSIVENESS
 ========================= */
 
 @media (max-width: 850px) {
+    .two-team,
+.single-team {
+    grid-template-columns: 1fr;
+}
     .people-pi {
     grid-template-columns: 1fr;
 }
