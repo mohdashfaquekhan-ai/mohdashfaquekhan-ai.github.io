@@ -527,3 +527,87 @@ footer a {
         grid-template-columns: 1fr;
     }
 }
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        min-height: 72px;
+    }
+
+    .logo-box {
+        width: 52px;
+        height: 52px;
+    }
+
+    .lab-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .lab-name strong {
+        font-size: 1.05rem;
+    }
+
+    .lab-name span {
+        font-size: 0.68rem;
+        white-space: normal;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-grid,
+    .pi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .pipeline {
+        flex-direction: column;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .page-hero {
+        padding: 65px 0 55px;
+    }
+
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .research-intro {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .research-detail-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .research-number {
+        font-size: 2.8rem;
+    }
+
+    .research-content h2 {
+        font-size: 1.7rem;
+    }
+}
