@@ -528,6 +528,124 @@ footer a {
     }
 }
 /* =========================
+   PEOPLE PAGE
+========================= */
+
+.people-pi {
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.people-photo img {
+    width: 100%;
+    height: 410px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.people-info h2 {
+    color: #173b2d;
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+
+.people-info h3 {
+    color: #66806e;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.people-info p {
+    color: #59675f;
+    margin-bottom: 15px;
+    max-width: 760px;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.profile-button {
+    text-decoration: none;
+    border: 1px solid #78917e;
+    color: #31533f;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.profile-button:hover {
+    background: #173b2d;
+    color: white;
+}
+
+.team-section {
+    background: #f5f8f4;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.team-card {
+    background: white;
+    padding: 22px;
+    border-radius: 7px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+.team-placeholder {
+    height: 230px;
+    background: #e4ece2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #728276;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.team-card h3 {
+    color: #173b2d;
+    margin-bottom: 4px;
+}
+
+.team-role {
+    color: #67806d;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    color: #657169;
+}
+
+.simple-card {
+    min-height: 150px;
+}
+
+.alumni-section {
+    background: #edf4e8;
+}
+
+.alumni-note {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #647069;
+}
+/* =========================
    MOBILE RESPONSIVENESS
 ========================= */
 
