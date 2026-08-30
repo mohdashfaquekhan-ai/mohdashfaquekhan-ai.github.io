@@ -1,3 +1,7 @@
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,39 +19,61 @@ body {
     background: #ffffff;
 }
 
-/* =========================
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   GLOBAL CONTAINER
+========================================================= */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+
+/* =========================================================
    HEADER & NAVIGATION
-========================= */
+========================================================= */
 
 .site-header {
     background: #12372a;
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 .navbar {
     width: 92%;
     max-width: 1300px;
     margin: auto;
+
     min-height: 82px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    gap: 30px;
+    gap: 28px;
     padding: 8px 0;
 }
 
 
-/* LAB IDENTITY */
+/* LAB BRAND */
 
 .lab-brand {
     display: flex;
     align-items: center;
     gap: 13px;
+
     text-decoration: none;
     flex-shrink: 0;
 }
@@ -60,11 +86,11 @@ body {
     height: 62px;
 
     background: white;
-    border-radius: 5px;
+    border-radius: 6px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
     overflow: hidden;
 }
@@ -72,6 +98,7 @@ body {
 .lab-logo {
     width: 58px;
     height: 58px;
+
     object-fit: contain;
     display: block;
 }
@@ -82,20 +109,26 @@ body {
 .lab-name {
     display: flex;
     flex-direction: column;
+
     line-height: 1.15;
 }
 
 .lab-name strong {
     color: #ffffff;
-    font-size: 1.35rem;
+
+    font-size: 1.3rem;
     font-weight: 750;
+
     letter-spacing: 0.2px;
 }
 
 .lab-name span {
     color: #d2dfd6;
-    font-size: 0.78rem;
+
+    font-size: 0.77rem;
+
     margin-top: 5px;
+
     white-space: nowrap;
 }
 
@@ -105,9 +138,11 @@ body {
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 27px;
 
     list-style: none;
+
+    gap: 25px;
+
     margin: 0;
     padding: 0;
 }
@@ -118,75 +153,106 @@ body {
 
 .nav-links a {
     color: #ffffff;
+
     text-decoration: none;
-    font-size: 0.95rem;
+
+    font-size: 0.94rem;
     font-weight: 500;
 
     transition: color 0.2s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links .active-link {
     color: #cfe5b6;
 }
-/* =========================
-   HERO SECTION
-========================= */
+
+
+/* =========================================================
+   HOMEPAGE HERO
+========================================================= */
 
 .hero {
     min-height: 88vh;
+
     display: flex;
     align-items: center;
+
     background:
         linear-gradient(
             rgba(15, 52, 40, 0.88),
             rgba(15, 52, 40, 0.82)
         ),
         url("https://images.unsplash.com/photo-1531058240690-006c446962d8?auto=format&fit=crop&w=1600&q=80");
+
     background-size: cover;
     background-position: center;
+
     color: white;
 }
 
 .hero-content {
     width: 90%;
     max-width: 1200px;
+
     margin: auto;
 }
 
 .hero-tag {
     text-transform: uppercase;
+
     letter-spacing: 3px;
+
     font-size: 0.9rem;
+
     margin-bottom: 15px;
+
     color: #dce8ce;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
     max-width: 850px;
+
+    font-size: 3.5rem;
     line-height: 1.15;
+
     margin-bottom: 20px;
 }
 
 .hero p {
     max-width: 750px;
+
     font-size: 1.2rem;
+
     margin-bottom: 30px;
+
     color: #f0f5f1;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
     flex-wrap: wrap;
+
+    gap: 15px;
 }
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
 
 .btn {
     display: inline-block;
+
     padding: 13px 24px;
+
     text-decoration: none;
-    border-radius: 4px;
+
+    border-radius: 5px;
+
     font-weight: 600;
+
+    transition: 0.2s ease;
 }
 
 .btn-primary {
@@ -201,83 +267,94 @@ body {
 
 .btn:hover {
     opacity: 0.9;
+    transform: translateY(-1px);
 }
 
-/* =========================
-   GENERAL SECTIONS
-========================= */
 
-.section {
-    padding: 80px 0;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
+/* =========================================================
+   SECTION TITLES
+========================================================= */
 
 .section-title {
     text-align: center;
+
     margin-bottom: 50px;
 }
 
 .section-title span {
     color: #517a60;
+
     text-transform: uppercase;
+
     letter-spacing: 2px;
-    font-size: 0.85rem;
+
+    font-size: 0.82rem;
     font-weight: 700;
 }
 
 .section-title h2 {
-    font-size: 2.4rem;
-    margin-top: 8px;
     color: #163c2d;
+
+    font-size: 2.4rem;
+
+    margin-top: 8px;
 }
 
 .section-title p {
     max-width: 760px;
+
     margin: 15px auto 0;
+
     color: #66756d;
 }
 
-/* =========================
-   ABOUT
-========================= */
+
+/* =========================================================
+   HOMEPAGE ABOUT
+========================================================= */
 
 .about-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 50px;
+
     align-items: center;
 }
 
 .about-text h2 {
     color: #163c2d;
+
     margin-bottom: 20px;
+
     font-size: 2rem;
 }
 
 .about-text p {
     margin-bottom: 16px;
+
     color: #55645c;
 }
 
 .about-box {
     background: #edf4e8;
+
     padding: 35px;
+
     border-left: 5px solid #517a60;
 }
 
 .about-box h3 {
     color: #173b2d;
+
     margin-bottom: 15px;
 }
 
-/* =========================
-   RESEARCH CARDS
-========================= */
+
+/* =========================================================
+   HOMEPAGE RESEARCH CARDS
+========================================================= */
 
 .research-section {
     background: #f5f8f4;
@@ -285,15 +362,21 @@ body {
 
 .cards {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
 }
 
 .card {
     background: white;
+
     padding: 30px;
-    border-radius: 6px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+
+    border-radius: 7px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
     transition: transform 0.3s ease;
 }
 
@@ -302,290 +385,726 @@ body {
 }
 
 .card-number {
-    font-size: 0.85rem;
     color: #76947d;
+
+    font-size: 0.85rem;
     font-weight: 700;
+
     margin-bottom: 12px;
 }
 
 .card h3 {
     color: #173b2d;
+
     margin-bottom: 12px;
 }
 
 .card p {
     color: #66756d;
+
     font-size: 0.95rem;
 }
 
-/* =========================
+
+/* =========================================================
+   RESEARCH PAGE HERO
+========================================================= */
+
+.page-hero,
+.research-hero {
+    background:
+        linear-gradient(
+            135deg,
+            #12372a 0%,
+            #1c4d3a 100%
+        );
+
+    color: white;
+
+    padding: 90px 0 80px;
+}
+
+.page-eyebrow,
+.research-hero .eyebrow {
+    display: inline-block;
+
+    color: #cfe3ba;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2.5px;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.page-hero h1,
+.research-hero h1 {
+    font-size: 3.5rem;
+
+    line-height: 1.1;
+
+    margin-bottom: 18px;
+}
+
+.page-hero p,
+.research-hero p {
+    max-width: 850px;
+
+    color: #e4eee7;
+
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESEARCH PHILOSOPHY
+========================================================= */
+
+.research-philosophy,
+.research-intro {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.3fr;
+
+    gap: 65px;
+
+    align-items: start;
+}
+
+.philosophy-heading span,
+.research-label {
+    display: inline-block;
+
+    color: #63806b;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.philosophy-heading h2,
+.research-intro h2 {
+    color: #173b2d;
+
+    font-size: 2.25rem;
+
+    line-height: 1.25;
+}
+
+.philosophy-text p,
+.research-intro p {
+    color: #59675f;
+
+    margin-bottom: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESEARCH PLACARDS
+   TWO SIDE BY SIDE
+========================================================= */
+
+.research-themes-section,
+.research-grid-section {
+    background: #f4f7f3;
+}
+
+.research-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+
+    align-items: stretch;
+}
+
+.research-placard {
+    background: #ffffff;
+
+    padding: 34px;
+
+    border-radius: 10px;
+
+    border-top: 5px solid #52745d;
+
+    box-shadow:
+        0 7px 24px
+        rgba(20, 55, 42, 0.07);
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.research-placard:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 32px
+        rgba(20, 55, 42, 0.12);
+}
+
+.placard-header,
+.placard-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.theme-number,
+.placard-number {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 45px;
+    height: 32px;
+
+    background: #173b2d;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
+.theme-category,
+.placard-label {
+    color: #6a836f;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.4px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    text-align: right;
+}
+
+.research-placard h3 {
+    color: #173b2d;
+
+    font-size: 1.5rem;
+
+    line-height: 1.3;
+
+    margin-bottom: 16px;
+}
+
+.research-placard > p {
+    color: #5e6b64;
+
+    line-height: 1.75;
+
+    margin-bottom: 22px;
+}
+
+.theme-tags,
+.research-points {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: auto;
+}
+
+.theme-tags span,
+.research-points span {
+    background: #edf3ea;
+
+    color: #365644;
+
+    border: 1px solid #d8e2d5;
+
+    border-radius: 20px;
+
+    padding: 7px 12px;
+
+    font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   OLD RESEARCH DETAIL CLASSES
+   Kept temporarily for compatibility
+========================================================= */
+
+.research-detail {
+    padding: 70px 0;
+
+    border-top: 1px solid #e2e8e3;
+}
+
+.alt-research {
+    background: #f5f8f4;
+}
+
+.research-detail-grid {
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 40px;
+}
+
+.research-number {
+    color: #d8e5d6;
+
+    font-size: 4rem;
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+.research-content h2 {
+    color: #173b2d;
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.research-content > p {
+    color: #5c6962;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   RESEARCH FRAMEWORK
+========================================================= */
+
+.framework-section {
+    background: #ffffff;
+}
+
+.framework-wrapper {
+    margin-top: 40px;
+}
+
+.framework-flow {
+    display: grid;
+
+    grid-template-columns:
+        1fr auto
+        1fr auto
+        1fr auto
+        1fr auto
+        1fr;
+
+    gap: 12px;
+
+    align-items: center;
+}
+
+.flow-box {
+    min-height: 105px;
+
+    background: #173b2d;
+
+    color: white;
+
+    padding: 20px 15px;
+
+    border-radius: 7px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flow-box strong {
+    font-size: 1rem;
+
+    margin-bottom: 5px;
+}
+
+.flow-box span {
+    color: #d5e3d8;
+
+    font-size: 0.78rem;
+
+    line-height: 1.4;
+}
+
+.flow-arrow {
+    color: #6b8975;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PRODUCT OUTCOMES
+========================================================= */
+
+.outcomes-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 28px;
+}
+
+.outcome-card {
+    background: #edf3ea;
+
+    padding: 22px;
+
+    text-align: center;
+
+    border-radius: 7px;
+}
+
+.outcome-card h4 {
+    color: #173b2d;
+
+    margin-bottom: 5px;
+}
+
+.outcome-card p {
+    color: #657268;
+
+    font-size: 0.82rem;
+}
+
+
+/* =========================================================
+   RESEARCH DIRECTIONS
+========================================================= */
+
+.directions-section {
+    background: #f4f7f3;
+}
+
+.directions-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.direction-card {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 8px;
+
+    border-left: 4px solid #66836e;
+}
+
+.direction-card span {
+    display: block;
+
+    color: #6d8975;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+
+    margin-bottom: 10px;
+}
+
+.direction-card h3 {
+    color: #173b2d;
+
+    font-size: 1.25rem;
+
+    margin-bottom: 12px;
+}
+
+.direction-card p {
+    color: #606d65;
+
+    line-height: 1.7;
+
+    font-size: 0.92rem;
+}
+
+
+/* =========================================================
    RESEARCH PIPELINE
-========================= */
+========================================================= */
 
 .pipeline {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
+
     flex-wrap: wrap;
+
     gap: 15px;
+
     margin-top: 40px;
 }
 
 .pipeline-item {
     background: #173b2d;
+
     color: white;
+
     padding: 20px;
+
     min-width: 150px;
+
     flex: 1;
+
     text-align: center;
+
     border-radius: 5px;
+
     font-weight: 600;
 }
 
 .arrow {
-    font-size: 1.8rem;
     color: #76947d;
+
+    font-size: 1.8rem;
 }
 
-/* =========================
-   PI SECTION
-========================= */
+
+/* =========================================================
+   COLLABORATION / CTA
+========================================================= */
+
+.research-collaboration,
+.research-cta {
+    background: #173b2d;
+
+    color: white;
+
+    padding: 80px 0;
+
+    text-align: center;
+}
+
+.research-collaboration span {
+    display: block;
+
+    color: #c9dfb5;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.research-collaboration h2,
+.research-cta h2 {
+    font-size: 2.35rem;
+
+    margin-bottom: 15px;
+}
+
+.research-collaboration p,
+.research-cta p {
+    max-width: 760px;
+
+    color: #dfe9e2;
+
+    margin: 0 auto 28px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PI HOMEPAGE SECTION
+========================================================= */
 
 .pi-section {
     background: #15392c;
+
     color: white;
 }
 
 .pi-grid {
     display: grid;
+
     grid-template-columns: 1fr 2fr;
+
     gap: 50px;
+
     align-items: center;
 }
 
 .pi-photo {
     width: 100%;
+
     max-width: 320px;
+
     margin: auto;
 }
 
 .pi-photo img {
     width: 100%;
     height: 390px;
+
     object-fit: cover;
     object-position: center top;
+
     border-radius: 8px;
+
     display: block;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0, 0, 0, 0.25);
 }
+
 .pi-info h2 {
     font-size: 2.3rem;
+
     margin-bottom: 8px;
 }
 
 .pi-info h3 {
+    color: #d5e3d5;
+
     font-size: 1.1rem;
     font-weight: 400;
-    color: #d5e3d5;
+
     margin-bottom: 20px;
 }
 
 .pi-info p {
-    margin-bottom: 15px;
     color: #e6eee8;
-}
 
-/* =========================
-   PUBLICATIONS
-========================= */
-
-.publication {
-    padding: 22px 0;
-    border-bottom: 1px solid #dfe5df;
-}
-
-.publication h3 {
-    color: #173b2d;
-    margin-bottom: 8px;
-    font-size: 1.05rem;
-}
-
-.publication p {
-    color: #66756d;
-}
-
-/* =========================
-   JOIN
-========================= */
-
-.join {
-    background: #edf4e8;
-    text-align: center;
-}
-
-.join h2 {
-    color: #173b2d;
-    font-size: 2.3rem;
     margin-bottom: 15px;
 }
 
-.join p {
-    max-width: 700px;
-    margin: auto auto 25px;
-    color: #5a6960;
-}
 
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background: #102d23;
-    color: #dbe6df;
-    padding: 40px 0;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 40px;
-}
-
-footer h3 {
-    color: white;
-    margin-bottom: 12px;
-}
-
-footer a {
-    color: #d7e7c3;
-    text-decoration: none;
-}
-
-.copyright {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #365348;
-    font-size: 0.85rem;
-}
-
-/* =========================
-   MOBILE RESPONSIVENESS
-========================= */
-
-.navbar {
-    min-height: 72px;
-}
-
-.logo-box {
-    width: 52px;
-    height: 52px;
-}
-
-.lab-logo {
-    width: 48px;
-    height: 48px;
-}
-
-.lab-name strong {
-    font-size: 1.05rem;
-}
-
-.lab-name span {
-    font-size: 0.68rem;
-    white-space: normal;
-}
-
-.nav-links {
-    display: none;
-}
-    .nav-links {
-        display: none;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .about-grid,
-    .pi-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .pipeline {
-        flex-direction: column;
-    }
-
-    .arrow {
-        transform: rotate(90deg);
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-}
-/* =========================
+/* =========================================================
    PEOPLE PAGE
-========================= */
+========================================================= */
 
 .people-pi {
     display: grid;
+
     grid-template-columns: 330px 1fr;
+
     gap: 55px;
+
     align-items: center;
 }
 
 .people-photo img {
     width: 100%;
     height: 410px;
+
     object-fit: cover;
     object-position: center top;
+
     border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.15);
 }
 
 .people-info h2 {
     color: #173b2d;
+
     font-size: 2.3rem;
+
     margin-bottom: 5px;
 }
 
 .people-info h3 {
     color: #66806e;
+
     font-size: 1.05rem;
     font-weight: 500;
+
     margin-bottom: 18px;
 }
 
 .people-info p {
     color: #59675f;
+
     margin-bottom: 15px;
+
     max-width: 760px;
 }
+
+
+/* PROFILE BUTTONS */
 
 .profile-links {
     display: flex;
     flex-wrap: wrap;
+
     gap: 10px;
+
     margin-top: 25px;
 }
 
 .profile-button {
+    display: inline-block;
+
     text-decoration: none;
+
     border: 1px solid #78917e;
+
     color: #31533f;
+
     padding: 8px 15px;
+
     border-radius: 4px;
+
     font-size: 0.85rem;
 }
 
 .profile-button:hover {
     background: #173b2d;
+
     color: white;
 }
+
+
+/* TEAM */
 
 .team-section {
     background: #f5f8f4;
@@ -593,37 +1112,53 @@ footer a {
 
 .team-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
 }
 
 .team-card {
     background: white;
+
     padding: 22px;
+
     border-radius: 7px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+
+    box-shadow:
+        0 4px 18px
+        rgba(0, 0, 0, 0.06);
 }
 
 .team-placeholder {
     height: 230px;
+
     background: #e4ece2;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: #728276;
+
     margin-bottom: 20px;
+
     border-radius: 5px;
 }
 
 .team-card h3 {
     color: #173b2d;
+
     margin-bottom: 4px;
 }
 
 .team-role {
     color: #67806d;
+
     font-weight: 600;
+
     font-size: 0.9rem;
+
     margin-bottom: 10px;
 }
 
@@ -631,48 +1166,40 @@ footer a {
     color: #657169;
 }
 
-.simple-card {
-    min-height: 150px;
-}
-
-.alumni-section {
-    background: #edf4e8;
-}
-
-.alumni-note {
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
-    color: #647069;
-}
-/* =========================
-   SCHOLAR STATUS
-========================= */
-
 .single-team {
     grid-template-columns: minmax(280px, 380px);
+
     justify-content: center;
 }
 
 .two-team {
     grid-template-columns: repeat(2, 1fr);
+
     max-width: 850px;
+
     margin: auto;
 }
 
 .research-topic {
     margin-top: 15px;
+
     line-height: 1.65;
 }
 
+
+/* STATUS */
+
 .status-badge {
     display: inline-block;
+
     margin-top: 18px;
+
     padding: 6px 12px;
+
     border-radius: 20px;
+
     font-size: 0.76rem;
     font-weight: 700;
-    letter-spacing: 0.3px;
 }
 
 .current-status {
@@ -694,30 +1221,145 @@ footer a {
     margin-top: 20px;
 }
 
-.alumni-card {
-    position: relative;
+.alumni-section {
+    background: #edf4e8;
 }
-/* =========================
-   MOBILE RESPONSIVENESS
-========================= */
+
+
+/* =========================================================
+   PUBLICATIONS
+========================================================= */
+
+.publication {
+    padding: 22px 0;
+
+    border-bottom: 1px solid #dfe5df;
+}
+
+.publication h3 {
+    color: #173b2d;
+
+    margin-bottom: 8px;
+
+    font-size: 1.05rem;
+}
+
+.publication p {
+    color: #66756d;
+}
+
+
+/* =========================================================
+   JOIN SECTION
+========================================================= */
+
+.join {
+    background: #edf4e8;
+
+    text-align: center;
+}
+
+.join h2 {
+    color: #173b2d;
+
+    font-size: 2.3rem;
+
+    margin-bottom: 15px;
+}
+
+.join p {
+    max-width: 700px;
+
+    margin: 0 auto 25px;
+
+    color: #5a6960;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: #102d23;
+
+    color: #dbe6df;
+
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 40px;
+}
+
+footer h3 {
+    color: white;
+
+    margin-bottom: 12px;
+}
+
+footer a {
+    color: #d7e7c3;
+
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #365348;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-philosophy,
+    .research-intro {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .framework-flow {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-arrow {
+        text-align: center;
+
+        transform: rotate(90deg);
+    }
+
+    .outcomes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .directions-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* MOBILE */
 
 @media (max-width: 850px) {
-    .two-team,
-.single-team {
-    grid-template-columns: 1fr;
-}
-    .people-pi {
-    grid-template-columns: 1fr;
-}
-
-.people-photo {
-    max-width: 300px;
-    margin: auto;
-}
-
-.team-grid {
-    grid-template-columns: 1fr;
-}
 
     .navbar {
         min-height: 72px;
@@ -739,6 +1381,7 @@ footer a {
 
     .lab-name span {
         font-size: 0.68rem;
+
         white-space: normal;
     }
 
@@ -746,18 +1389,49 @@ footer a {
         display: none;
     }
 
+
     .hero h1 {
         font-size: 2.5rem;
     }
 
+
     .about-grid,
-    .pi-grid {
+    .pi-grid,
+    .people-pi {
         grid-template-columns: 1fr;
     }
+
 
     .cards {
         grid-template-columns: 1fr;
     }
+
+
+    .team-grid,
+    .two-team,
+    .single-team {
+        grid-template-columns: 1fr;
+    }
+
+
+    .people-photo {
+        max-width: 300px;
+
+        margin: auto;
+    }
+
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .research-detail-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
 
     .pipeline {
         flex-direction: column;
@@ -767,33 +1441,48 @@ footer a {
         transform: rotate(90deg);
     }
 
+
     .footer-grid {
         grid-template-columns: 1fr;
     }
 
-    .page-hero {
-        padding: 65px 0 55px;
+
+    .page-hero,
+    .research-hero {
+        padding: 60px 0 55px;
     }
 
-    .page-hero h1 {
+    .page-hero h1,
+    .research-hero h1 {
         font-size: 2.5rem;
     }
 
-    .research-intro {
+}
+
+
+/* SMALL PHONE */
+
+@media (max-width: 550px) {
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .research-placard {
+        padding: 24px;
+    }
+
+    .placard-header,
+    .placard-top {
+        align-items: flex-start;
+    }
+
+    .outcomes-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
     }
 
-    .research-detail-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .section-title h2 {
+        font-size: 2rem;
     }
 
-    .research-number {
-        font-size: 2.8rem;
-    }
-
-    .research-content h2 {
-        font-size: 1.7rem;
-    }
 }
