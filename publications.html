@@ -1,1 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Selected publications from LignoBio Lab in lignocellulosic biomass valorisation, biofuels, enzyme technology, biocatalysis, environmental biotechnology and sustainable biorefineries.">
+
+    <meta name="keywords"
+          content="LignoBio Lab publications, lignocellulosic biomass, bioethanol, biomass pretreatment, cellulase, laccase, lignin valorisation, biorefinery">
+
+    <title>
+        Publications | LignoBio Lab
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- =====================================================
+         PUBLICATIONS PAGE STYLING
+    ====================================================== -->
+
+    <style>
+
+        .publication-hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #12372a 0%,
+                    #1c4d3a 100%
+                );
+
+            color: white;
+
+            padding: 90px 0 80px;
+        }
+
+        .publication-hero span {
+            display: inline-block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2.5px;
+
+            font-size: 0.8rem;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .publication-hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+
+            margin-bottom: 18px;
+        }
+
+        .publication-hero p {
+            max-width: 850px;
+
+            color: #e3ede6;
+
+            font-size: 1.15rem;
+            line-height: 1.8;
+        }
+
+
+        /* INTRO */
+
+        .publication-intro {
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .publication-intro h2 {
+            color: #173b2d;
+
+            font-size: 2.3rem;
+
+            margin-bottom: 18px;
+        }
+
+        .publication-intro p {
+            color: #5d6962;
+
+            line-height: 1.8;
+        }
+
+
+        /* YEAR SECTION */
+
+        .year-section {
+            padding: 70px 0;
+        }
+
+        .year-section.alt-year {
+            background: #f5f8f4;
+        }
+
+        .year-heading {
+            display: flex;
+            align-items: center;
+
+            gap: 20px;
+
+            margin-bottom: 32px;
+        }
+
+        .year-heading h2 {
+            color: #173b2d;
+
+            font-size: 2.5rem;
+        }
+
+        .year-heading::after {
+            content: "";
+
+            height: 1px;
+
+            background: #d7e0d8;
+
+            flex: 1;
+        }
+
+
+        /* PUBLICATION GRID */
+
+        .publication-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            gap: 25px;
+        }
+
+
+        /* PUBLICATION CARD */
+
+        .publication-card {
+            background: white;
+
+            border-radius: 9px;
+
+            padding: 28px;
+
+            border-left: 4px solid #5f8068;
+
+            box-shadow:
+                0 6px 22px
+                rgba(20, 55, 42, 0.06);
+
+            display: flex;
+            flex-direction: column;
+
+            min-width: 0;
+        }
+
+        .publication-card:hover {
+            box-shadow:
+                0 12px 28px
+                rgba(20, 55, 42, 0.10);
+        }
+
+
+        /* PUBLICATION TYPE */
+
+        .publication-type {
+            display: inline-block;
+
+            align-self: flex-start;
+
+            background: #edf3ea;
+
+            color: #4e6c58;
+
+            border-radius: 20px;
+
+            padding: 5px 10px;
+
+            margin-bottom: 15px;
+
+            font-size: 0.72rem;
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* TITLE */
+
+        .publication-card h3 {
+            color: #173b2d;
+
+            font-size: 1.15rem;
+
+            line-height: 1.45;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* JOURNAL */
+
+        .journal-name {
+            color: #5e6b64;
+
+            line-height: 1.6;
+
+            margin-bottom: 8px;
+        }
+
+        .journal-name strong {
+            color: #31533f;
+        }
+
+
+        /* CATEGORY */
+
+        .publication-category {
+            color: #758078;
+
+            font-size: 0.82rem;
+
+            margin-top: 3px;
+            margin-bottom: 18px;
+        }
+
+
+        /* BUTTONS */
+
+        .publication-actions {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: auto;
+        }
+
+        .publication-link {
+            display: inline-block;
+
+            text-decoration: none;
+
+            color: #31533f;
+
+            border: 1px solid #78917e;
+
+            padding: 7px 13px;
+
+            border-radius: 4px;
+
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        .publication-link:hover {
+            background: #173b2d;
+
+            color: white;
+        }
+
+
+        /* FEATURED PUBLICATION */
+
+        .featured-publication {
+            background:
+                linear-gradient(
+                    135deg,
+                    #173b2d,
+                    #245541
+                );
+
+            color: white;
+
+            padding: 42px;
+
+            border-radius: 10px;
+
+            margin-top: 40px;
+        }
+
+        .featured-publication span {
+            display: block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.8px;
+
+            font-size: 0.75rem;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .featured-publication h3 {
+            color: white;
+
+            font-size: 1.55rem;
+            line-height: 1.45;
+
+            margin-bottom: 15px;
+        }
+
+        .featured-publication p {
+            color: #dfe9e2;
+
+            margin-bottom: 22px;
+        }
+
+        .featured-publication .publication-link {
+            color: white;
+
+            border-color: #b9d0bd;
+        }
+
+        .featured-publication .publication-link:hover {
+            background: white;
+
+            color: #173b2d;
+        }
+
+
+        /* RESEARCH AREAS */
+
+        .publication-fields {
+            background: #edf4e8;
+        }
+
+        .field-tags {
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            max-width: 950px;
+
+            margin: auto;
+        }
+
+        .field-tags span {
+            background: white;
+
+            color: #31533f;
+
+            border: 1px solid #d5dfd6;
+
+            padding: 9px 15px;
+
+            border-radius: 25px;
+
+            font-size: 0.84rem;
+        }
+
+
+        /* SCHOLARLY PROFILES */
+
+        .scholarly-profiles {
+            text-align: center;
+        }
+
+        .scholarly-profiles h2 {
+            color: #173b2d;
+
+            font-size: 2.2rem;
+
+            margin-bottom: 14px;
+        }
+
+        .scholarly-profiles p {
+            color: #606d65;
+
+            max-width: 700px;
+
+            margin: 0 auto 25px;
+        }
+
+        .profile-row {
+            display: flex;
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 12px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .publication-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .publication-hero {
+                padding: 60px 0 55px;
+            }
+
+            .publication-hero h1 {
+                font-size: 2.6rem;
+            }
+
+            .featured-publication {
+                padding: 28px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+
+        <a href="index.html"
+           class="lab-brand">
+
+            <div class="logo-box">
+
+                <img src="lignobio-logo.png"
+                     alt="LignoBio Lab Logo"
+                     class="lab-logo">
+
+            </div>
+
+
+            <div class="lab-name">
+
+                <strong>
+                    LignoBio Lab
+                </strong>
+
+                <span>
+                    Lignocellulose & Biofuel Research Laboratory
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    Research
+                </a>
+            </li>
+
+            <li>
+                <a href="people.html">
+                    People
+                </a>
+            </li>
+
+            <li>
+                <a href="publications.html"
+                   class="active-link">
+                    Publications
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#opportunities">
+                    Opportunities
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="publication-hero">
+
+    <div class="container">
+
+        <span>
+            Research Output
+        </span>
+
+        <h1>
+            Publications
+        </h1>
+
+        <p>
+            Selected publications associated with our research
+            programme in lignocellulosic biomass valorisation,
+            second-generation biofuels, enzyme technology,
+            biocatalysis, lignin and cellulose utilisation,
+            environmental biotechnology and sustainable
+            biorefinery development.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="publication-intro">
+
+            <h2>
+                Research Contributions
+            </h2>
+
+            <p>
+                Our publication portfolio reflects an integrated
+                approach to lignocellulosic biomass conversion,
+                ranging from biomass pretreatment and enzymatic
+                hydrolysis to microbial fermentation,
+                nano-biocatalysis, environmental remediation
+                and development of biomass-derived materials.
+                Selected publications most closely aligned with
+                the research programme of LignoBio Lab are
+                highlighted below.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     2026
+===================================================== -->
+
+<section class="year-section alt-year">
+
+    <div class="container">
+
+        <div class="year-heading">
+
+            <h2>
+                2026
+            </h2>
+
+        </div>
+
+
+        <div class="publication-grid">
+
+
+            <!-- PUBLICATION 1 -->
+
+            <article class="publication-card">
+
+                <span class="publication-type">
+                    Original Research
+                </span>
+
+                <h3>
+                    Integrated KOH–SDS–Microwave Pretreatment
+                    for Enhanced Delignification of Agro-Waste
+                    Biomass for Second-Generation Biorefinery
+                    Applications
+                </h3>
+
+                <p class="journal-name">
+                    <strong>
+                        Biotechnology Letters
+                    </strong>
+                    · 2026 · 48:101
+                </p>
+
+                <p class="publication-category">
+                    Biomass Pretreatment · Delignification ·
+                    Biorefinery
+                </p>
+
+
+                <div class="publication-actions">
+
+                    <a href="https://doi.org/10.1007/s10529-026-03771-z"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="publication-link">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PUBLICATION 2 -->
+
+            <article class="publication-card">
+
+                <span class="publication-type">
+                    Original Research
+                </span>
+
+                <h3>
+                    Sustainable Valorisation of Untreated
+                    Sugarcane Bagasse and its Extracted Xylan:
+                    A Comparative Study of Enhanced Xylanolytic
+                    Potential among Engineered
+                    <em>E. coli</em> and Donor Bacterium
+                </h3>
+
+                <p class="journal-name">
+                    <strong>
+                        Sugar Tech
+                    </strong>
+                    · 2026
+                </p>
+
+                <p class="publication-category">
+                    Sugarcane Bagasse · Xylan ·
+                    Recombinant Biotechnology
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- FEATURED -->
+
+        <div class="featured-publication">
+
+            <span>
+                Featured 2026 Publication
+            </span>
+
+            <h3>
+                Integrated KOH–SDS–Microwave Pretreatment
+                for Enhanced Delignification of Agro-Waste Biomass
+                for Second-Generation Biorefinery Applications
+            </h3>
+
+            <p>
+                This work represents our integrated approach
+                to combining chemical, surfactant and
+                microwave-assisted biomass processing for improved
+                delignification and downstream lignocellulosic
+                biomass utilisation.
+            </p>
+
+            <a href="https://doi.org/10.1007/s10529-026-03771-z"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="publication-link">
+
+                View Publication
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     2025
+===================================================== -->
+
+<section class="year-section">
+
+    <div class="container">
+
+        <div class="year-heading">
+
+            <h2>
+                2025
+            </h2>
+
+        </div>
+
+
+        <div class="publication-grid">
+
+
+            <!-- PUBLICATION 3 -->
+
+            <article class="publication-card">
+
+                <span class="publication-type">
+                    Original Research
+                </span>
+
+                <h3>
+                    Statistical Machine Learning Models for
+                    Carbohydrate-Based Bioethanol Production
+                    from Sugarcane Bagasse: Optimization and
+                    Experimental Validation
+                </h3>
+
+                <p class="journal-name">
+                    <strong>
+                        Waste and Biomass Valorization
+                    </strong>
+                    · 2025
+                </p>
+
+                <p class="publication-category">
+                    Bioethanol · Sugarcane Bagasse ·
+                    Process Optimisation · Machine Learning
+                </p>
+
+
+                <div class="publication-actions">
+
+                    <a href="https://doi.org/10.1007/s12649-025-03341-w"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="publication-link">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PUBLICATION 4 -->
+
+            <article class="publication-card">
+
+                <span class="publication-type">
+                    Original Research
+                </span>
+
+                <h3>
+                    Biodegradation of Synthetic Dyes Using
+                    <em>Aspergillus fumigatus</em>-Derived
+                    Laccase Immobilized in Alginate Matrices
+                </h3>
+
+                <p class="journal-name">
+                    <strong>
+                        Biodegradation
+                    </strong>
+                    · 2025
+                </p>
+
+                <p class="publication-category">
+                    Laccase · Enzyme Immobilisation ·
+                    Dye Degradation · Environmental Biotechnology
+                </p>
+
+
+                <div class="publication-actions">
+
+                    <a href="https://doi.org/10.1007/s10532-025-10218-1"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="publication-link">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PUBLICATION 5 -->
+
+            <article class="publication-card">
+
+                <span class="publication-type">
+                    Review / Research Contribution
+                </span>
+
+                <h3>
+                    Nanocellulose and Nanolignin:
+                    Synthesis and Applications
+                </h3>
+
+                <p class="journal-name">
+                    <strong>
+                        Polymer Bulletin
+                    </strong>
+                    · 2025
+                </p>
+
+                <p class="publication-category">
+                    Nanocellulose · Nanolignin ·
+                    Biomaterials · Biomass Valorisation
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     EARLIER SELECTED WORK
+===================================================== -->
+
+<section class="year-section alt-year">
+
+    <div class="container">
+
+        <div class="year-heading">
+
+            <h2>
+                Earlier Selected Work
+            </h2>
+
+        </div>
+
+
+        <div class="publication-grid">
+
+
+            <article class="publication-card">
+
+                <span class="publication-type">
+                    Research Contribution
+                </span>
+
+                <h3>
+                    Metabolic Engineering for Pentose Utilization
+                </h3>
+
+                <p class="journal-name">
+                    <strong>
+                        Microbiological Research
+                    </strong>
+                    · 2023
+                </p>
+
+                <p class="publication-category">
+                    Pentose Utilisation · Metabolic Engineering ·
+                    Biofuel Biotechnology
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESEARCH AREAS REPRESENTED
+===================================================== -->
+
+<section class="section publication-fields">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Publication Portfolio
+            </span>
+
+            <h2>
+                Research Areas Represented
+            </h2>
+
+            <p>
+                Our publications span multiple interconnected
+                areas within lignocellulosic biotechnology
+                and sustainable bioprocessing.
+            </p>
+
+        </div>
+
+
+        <div class="field-tags">
+
+            <span>
+                Biomass Pretreatment
+            </span>
+
+            <span>
+                Lignocellulosic Bioethanol
+            </span>
+
+            <span>
+                Enzyme Technology
+            </span>
+
+            <span>
+                Laccase Biotechnology
+            </span>
+
+            <span>
+                Enzyme Immobilisation
+            </span>
+
+            <span>
+                Pentose Utilisation
+            </span>
+
+            <span>
+                Nanocellulose
+            </span>
+
+            <span>
+                Nanolignin
+            </span>
+
+            <span>
+                Environmental Biotechnology
+            </span>
+
+            <span>
+                Biomass Valorisation
+            </span>
+
+            <span>
+                Sustainable Biorefineries
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SCHOLARLY PROFILES
+===================================================== -->
+
+<section class="section scholarly-profiles">
+
+    <div class="container">
+
+        <h2>
+            Complete Scholarly Record
+        </h2>
+
+        <p>
+            Additional publications, citation metrics and
+            bibliographic information can be accessed through
+            the investigator's scholarly profiles.
+        </p>
+
+
+        <div class="profile-row">
+
+            <a href="#"
+               class="publication-link">
+
+                Google Scholar
+
+            </a>
+
+            <a href="#"
+               class="publication-link">
+
+                ORCID
+
+            </a>
+
+            <a href="#"
+               class="publication-link">
+
+                ResearchGate
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    LignoBio Lab
+                </h3>
+
+                <p>
+                    Lignocellulose & Biofuel Research Laboratory
+                    <br>
+                    Department of Biosciences
+                    <br>
+                    Integral University
+                    <br>
+                    Lucknow, Uttar Pradesh, India
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <p>
+
+                    <a href="research.html">
+                        Research
+                    </a>
+
+                    <br>
+
+                    <a href="people.html">
+                        People
+                    </a>
+
+                    <br>
+
+                    <a href="publications.html">
+                        Publications
+                    </a>
+
+                    <br>
+
+                    <a href="index.html#opportunities">
+                        Opportunities
+                    </a>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 LignoBio Lab.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
