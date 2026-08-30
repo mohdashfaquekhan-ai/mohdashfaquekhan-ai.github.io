@@ -472,8 +472,32 @@ footer a {
    MOBILE RESPONSIVENESS
 ========================= */
 
-@media (max-width: 850px) {
+.navbar {
+    min-height: 72px;
+}
 
+.logo-box {
+    width: 52px;
+    height: 52px;
+}
+
+.lab-logo {
+    width: 48px;
+    height: 48px;
+}
+
+.lab-name strong {
+    font-size: 1.05rem;
+}
+
+.lab-name span {
+    font-size: 0.68rem;
+    white-space: normal;
+}
+
+.nav-links {
+    display: none;
+}
     .nav-links {
         display: none;
     }
