@@ -650,6 +650,18 @@ footer a {
 ========================= */
 
 @media (max-width: 850px) {
+    .people-pi {
+    grid-template-columns: 1fr;
+}
+
+.people-photo {
+    max-width: 300px;
+    margin: auto;
+}
+
+.team-grid {
+    grid-template-columns: 1fr;
+}
 
     .navbar {
         min-height: 72px;
