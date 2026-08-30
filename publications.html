@@ -9,10 +9,10 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Selected publications from LignoBio Lab in lignocellulosic biomass valorisation, biofuels, enzyme technology, biocatalysis, environmental biotechnology and sustainable biorefineries.">
+          content="Publications of Dr. Mohammad Ashfaque and LignoBio Lab in lignocellulosic biomass valorisation, biofuels, enzyme technology, biocatalysis, nanobiotechnology, environmental biotechnology and global health collaborations.">
 
     <meta name="keywords"
-          content="LignoBio Lab publications, lignocellulosic biomass, bioethanol, biomass pretreatment, cellulase, laccase, lignin valorisation, biorefinery">
+          content="Mohammad Ashfaque publications, LignoBio Lab, lignocellulosic biomass, bioethanol, biomass pretreatment, cellulase, laccase, lignin valorisation, biorefinery, nanobiocatalysis">
 
     <title>
         Publications | LignoBio Lab
@@ -21,13 +21,13 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <!-- =====================================================
-         PUBLICATIONS PAGE STYLING
-    ====================================================== -->
-
     <style>
 
-        .publication-hero {
+        /* =====================================================
+           PUBLICATIONS HERO
+        ====================================================== */
+
+        .pub-hero {
             background:
                 linear-gradient(
                     135deg,
@@ -40,7 +40,7 @@
             padding: 90px 0 80px;
         }
 
-        .publication-hero span {
+        .pub-hero span {
             display: inline-block;
 
             color: #cfe3ba;
@@ -55,26 +55,30 @@
             margin-bottom: 12px;
         }
 
-        .publication-hero h1 {
+        .pub-hero h1 {
             font-size: 3.5rem;
+
             line-height: 1.1;
 
             margin-bottom: 18px;
         }
 
-        .publication-hero p {
+        .pub-hero p {
             max-width: 850px;
 
             color: #e3ede6;
 
             font-size: 1.15rem;
+
             line-height: 1.8;
         }
 
 
-        /* INTRO */
+        /* =====================================================
+           INTRODUCTION
+        ====================================================== */
 
-        .publication-intro {
+        .pub-intro {
             max-width: 900px;
 
             margin: auto;
@@ -82,7 +86,7 @@
             text-align: center;
         }
 
-        .publication-intro h2 {
+        .pub-intro h2 {
             color: #173b2d;
 
             font-size: 2.3rem;
@@ -90,106 +94,154 @@
             margin-bottom: 18px;
         }
 
-        .publication-intro p {
+        .pub-intro p {
             color: #5d6962;
 
             line-height: 1.8;
         }
 
 
-        /* YEAR SECTION */
+        /* =====================================================
+           PUBLICATION SECTIONS
+        ====================================================== */
 
-        .year-section {
-            padding: 70px 0;
+        .pub-section {
+            padding: 75px 0;
         }
 
-        .year-section.alt-year {
+        .pub-section-alt {
             background: #f5f8f4;
         }
 
-        .year-heading {
-            display: flex;
-            align-items: center;
-
-            gap: 20px;
-
-            margin-bottom: 32px;
+        .pub-heading {
+            margin-bottom: 38px;
         }
 
-        .year-heading h2 {
+        .pub-heading span {
+            color: #65806c;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
+
+        .pub-heading h2 {
             color: #173b2d;
 
-            font-size: 2.5rem;
+            font-size: 2.35rem;
+
+            margin-top: 7px;
+            margin-bottom: 10px;
         }
 
-        .year-heading::after {
+        .pub-heading p {
+            color: #637068;
+
+            max-width: 800px;
+
+            line-height: 1.7;
+        }
+
+
+        /* =====================================================
+           YEAR HEADING
+        ====================================================== */
+
+        .year-title {
+            display: flex;
+
+            align-items: center;
+
+            gap: 18px;
+
+            margin-top: 55px;
+            margin-bottom: 25px;
+        }
+
+        .year-title:first-of-type {
+            margin-top: 10px;
+        }
+
+        .year-title h3 {
+            color: #173b2d;
+
+            font-size: 2rem;
+        }
+
+        .year-title::after {
             content: "";
 
             height: 1px;
 
-            background: #d7e0d8;
-
             flex: 1;
+
+            background: #d7e0d8;
         }
 
 
-        /* PUBLICATION GRID */
+        /* =====================================================
+           PUBLICATION GRID
+        ====================================================== */
 
-        .publication-grid {
+        .pub-grid {
             display: grid;
 
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
 
             gap: 25px;
         }
 
 
-        /* PUBLICATION CARD */
+        /* =====================================================
+           PUBLICATION CARD
+        ====================================================== */
 
-        .publication-card {
+        .pub-card {
             background: white;
+
+            border-left: 4px solid #5f8068;
 
             border-radius: 9px;
 
             padding: 28px;
-
-            border-left: 4px solid #5f8068;
 
             box-shadow:
                 0 6px 22px
                 rgba(20, 55, 42, 0.06);
 
             display: flex;
+
             flex-direction: column;
-
-            min-width: 0;
         }
 
-        .publication-card:hover {
+        .pub-card:hover {
             box-shadow:
-                0 12px 28px
-                rgba(20, 55, 42, 0.10);
+                0 12px 30px
+                rgba(20, 55, 42, 0.11);
         }
 
 
-        /* PUBLICATION TYPE */
-
-        .publication-type {
-            display: inline-block;
-
+        .pub-type {
             align-self: flex-start;
+
+            display: inline-block;
 
             background: #edf3ea;
 
-            color: #4e6c58;
+            color: #506e59;
 
             border-radius: 20px;
 
             padding: 5px 10px;
 
-            margin-bottom: 15px;
+            margin-bottom: 14px;
 
-            font-size: 0.72rem;
+            font-size: 0.70rem;
+
             font-weight: 700;
 
             text-transform: uppercase;
@@ -198,58 +250,71 @@
         }
 
 
-        /* TITLE */
-
-        .publication-card h3 {
+        .pub-card h3 {
             color: #173b2d;
 
-            font-size: 1.15rem;
+            font-size: 1.12rem;
 
-            line-height: 1.45;
+            line-height: 1.5;
 
-            margin-bottom: 15px;
+            margin-bottom: 13px;
         }
 
 
-        /* JOURNAL */
+        .pub-authors {
+            color: #68736c;
 
-        .journal-name {
-            color: #5e6b64;
+            font-size: 0.85rem;
 
             line-height: 1.6;
 
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
-        .journal-name strong {
+
+        .pub-authors strong {
+            color: #254d38;
+
+            font-weight: 700;
+        }
+
+
+        .pub-journal {
+            color: #5b6861;
+
+            margin-bottom: 8px;
+
+            line-height: 1.5;
+        }
+
+
+        .pub-journal strong {
             color: #31533f;
         }
 
 
-        /* CATEGORY */
-
-        .publication-category {
+        .pub-tags {
             color: #758078;
 
-            font-size: 0.82rem;
+            font-size: 0.8rem;
 
-            margin-top: 3px;
+            line-height: 1.5;
+
             margin-bottom: 18px;
         }
 
 
-        /* BUTTONS */
+        /* =====================================================
+           DOI BUTTON
+        ====================================================== */
 
-        .publication-actions {
-            display: flex;
-            flex-wrap: wrap;
-
-            gap: 10px;
-
+        .pub-actions {
             margin-top: auto;
+
+            padding-top: 8px;
         }
 
-        .publication-link {
+        .doi-button {
             display: inline-block;
 
             text-decoration: none;
@@ -258,141 +323,124 @@
 
             border: 1px solid #78917e;
 
-            padding: 7px 13px;
-
             border-radius: 4px;
 
-            font-size: 0.82rem;
-            font-weight: 600;
+            padding: 7px 14px;
+
+            font-size: 0.8rem;
+
+            font-weight: 650;
+
+            transition: 0.2s ease;
         }
 
-        .publication-link:hover {
+        .doi-button:hover {
             background: #173b2d;
 
             color: white;
         }
 
 
-        /* FEATURED PUBLICATION */
+        /* =====================================================
+           GLOBAL HEALTH CARDS
+        ====================================================== */
 
-        .featured-publication {
-            background:
-                linear-gradient(
-                    135deg,
-                    #173b2d,
-                    #245541
-                );
-
-            color: white;
-
-            padding: 42px;
-
-            border-radius: 10px;
-
-            margin-top: 40px;
+        .global-card {
+            border-left-color: #8a7b50;
         }
 
-        .featured-publication span {
-            display: block;
+        .global-card .pub-type {
+            background: #f0eee4;
 
-            color: #cfe3ba;
-
-            text-transform: uppercase;
-
-            letter-spacing: 1.8px;
-
-            font-size: 0.75rem;
-            font-weight: 700;
-
-            margin-bottom: 12px;
-        }
-
-        .featured-publication h3 {
-            color: white;
-
-            font-size: 1.55rem;
-            line-height: 1.45;
-
-            margin-bottom: 15px;
-        }
-
-        .featured-publication p {
-            color: #dfe9e2;
-
-            margin-bottom: 22px;
-        }
-
-        .featured-publication .publication-link {
-            color: white;
-
-            border-color: #b9d0bd;
-        }
-
-        .featured-publication .publication-link:hover {
-            background: white;
-
-            color: #173b2d;
+            color: #665b38;
         }
 
 
-        /* RESEARCH AREAS */
+        /* =====================================================
+           NOTE
+        ====================================================== */
 
-        .publication-fields {
+        .publication-note {
+            margin-top: 35px;
+
+            padding: 20px 25px;
+
+            background: #edf4e8;
+
+            border-left: 4px solid #63806b;
+
+            color: #58675f;
+
+            line-height: 1.7;
+
+            border-radius: 4px;
+        }
+
+
+        /* =====================================================
+           RESEARCH PORTFOLIO TAGS
+        ====================================================== */
+
+        .portfolio-section {
             background: #edf4e8;
         }
 
-        .field-tags {
+        .portfolio-tags {
             display: flex;
+
             flex-wrap: wrap;
 
             justify-content: center;
 
-            gap: 12px;
+            gap: 11px;
 
-            max-width: 950px;
+            max-width: 1000px;
 
             margin: auto;
         }
 
-        .field-tags span {
+        .portfolio-tags span {
             background: white;
 
             color: #31533f;
 
-            border: 1px solid #d5dfd6;
+            border: 1px solid #d4dfd5;
+
+            border-radius: 24px;
 
             padding: 9px 15px;
 
-            border-radius: 25px;
-
-            font-size: 0.84rem;
+            font-size: 0.82rem;
         }
 
 
-        /* SCHOLARLY PROFILES */
+        /* =====================================================
+           SCHOLARLY PROFILES
+        ====================================================== */
 
-        .scholarly-profiles {
+        .profile-section {
             text-align: center;
         }
 
-        .scholarly-profiles h2 {
+        .profile-section h2 {
             color: #173b2d;
 
             font-size: 2.2rem;
 
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
-        .scholarly-profiles p {
+        .profile-section p {
             color: #606d65;
 
-            max-width: 700px;
+            max-width: 720px;
 
             margin: 0 auto 25px;
         }
 
-        .profile-row {
+        .profile-buttons {
             display: flex;
+
             flex-wrap: wrap;
 
             justify-content: center;
@@ -401,24 +449,22 @@
         }
 
 
-        /* MOBILE */
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
 
         @media (max-width: 850px) {
 
-            .publication-grid {
+            .pub-grid {
                 grid-template-columns: 1fr;
             }
 
-            .publication-hero {
+            .pub-hero {
                 padding: 60px 0 55px;
             }
 
-            .publication-hero h1 {
+            .pub-hero h1 {
                 font-size: 2.6rem;
-            }
-
-            .featured-publication {
-                padding: 28px;
             }
 
         }
@@ -514,7 +560,6 @@
 
         </ul>
 
-
     </nav>
 
 </header>
@@ -525,7 +570,7 @@
      HERO
 ===================================================== -->
 
-<section class="publication-hero">
+<section class="pub-hero">
 
     <div class="container">
 
@@ -538,12 +583,12 @@
         </h1>
 
         <p>
-            Selected publications associated with our research
-            programme in lignocellulosic biomass valorisation,
-            second-generation biofuels, enzyme technology,
-            biocatalysis, lignin and cellulose utilisation,
-            environmental biotechnology and sustainable
-            biorefinery development.
+            Peer-reviewed research contributions spanning
+            lignocellulosic biomass valorisation, second-generation
+            biofuels, biomass pretreatment, enzyme technology,
+            biocatalysis, nanotechnology, environmental
+            biotechnology and multidisciplinary global
+            health collaborations.
         </p>
 
     </div>
@@ -553,29 +598,27 @@
 
 
 <!-- =====================================================
-     INTRODUCTION
+     INTRO
 ===================================================== -->
 
 <section class="section">
 
     <div class="container">
 
-        <div class="publication-intro">
+        <div class="pub-intro">
 
             <h2>
                 Research Contributions
             </h2>
 
             <p>
-                Our publication portfolio reflects an integrated
-                approach to lignocellulosic biomass conversion,
-                ranging from biomass pretreatment and enzymatic
-                hydrolysis to microbial fermentation,
-                nano-biocatalysis, environmental remediation
-                and development of biomass-derived materials.
-                Selected publications most closely aligned with
-                the research programme of LignoBio Lab are
-                highlighted below.
+                The publication portfolio reflects both the core
+                research programme of LignoBio Lab and broader
+                multidisciplinary collaborations. Core research
+                focuses primarily on sustainable utilisation of
+                lignocellulosic biomass, enzymatic bioconversion,
+                second-generation bioethanol, biomass-derived
+                materials and environmental biotechnology.
             </p>
 
         </div>
@@ -587,59 +630,81 @@
 
 
 <!-- =====================================================
-     2026
+     GLOBAL HEALTH COLLABORATIONS
 ===================================================== -->
 
-<section class="year-section alt-year">
+<section class="pub-section pub-section-alt">
 
     <div class="container">
 
-        <div class="year-heading">
+
+        <div class="pub-heading">
+
+            <span>
+                Multidisciplinary Collaboration
+            </span>
 
             <h2>
-                2026
+                Global Health Collaborations
             </h2>
+
+            <p>
+                Collaborative contributions to the Global Burden
+                of Disease Study are presented separately from
+                the core biomass and biorefinery research programme.
+            </p>
 
         </div>
 
 
-        <div class="publication-grid">
+        <div class="year-title">
+
+            <h3>
+                2026
+            </h3>
+
+        </div>
 
 
-            <!-- PUBLICATION 1 -->
+        <div class="pub-grid">
 
-            <article class="publication-card">
 
-                <span class="publication-type">
-                    Original Research
+            <!-- ROAD INJURIES -->
+
+            <article class="pub-card global-card">
+
+                <span class="pub-type">
+                    GBD Collaboration
                 </span>
 
                 <h3>
-                    Integrated KOH–SDS–Microwave Pretreatment
-                    for Enhanced Delignification of Agro-Waste
-                    Biomass for Second-Generation Biorefinery
-                    Applications
+                    Global, Regional, and National Burden of Road
+                    Injuries 1990–2023: A Systematic Analysis for
+                    the Global Burden of Disease Study 2023
                 </h3>
 
-                <p class="journal-name">
-                    <strong>
-                        Biotechnology Letters
-                    </strong>
-                    · 2026 · 48:101
+                <p class="pub-authors">
+                    Van Der Lubbe, S.C.C., Moberg, M.E.,
+                    Aluquin, D., Zhou, Y., Lenox, H.,
+                    Abaraogu, U.O. … <strong>Mohammad Ashfaque</strong>
+                    et al.
                 </p>
 
-                <p class="publication-category">
-                    Biomass Pretreatment · Delignification ·
-                    Biorefinery
+                <p class="pub-journal">
+                    <strong>The Lancet Public Health</strong>,
+                    11(9), e589–e603 (2026)
                 </p>
 
+                <p class="pub-tags">
+                    Global Health · Injury Burden · GBD 2023
+                </p>
 
-                <div class="publication-actions">
+                <div class="pub-actions">
 
-                    <a href="https://doi.org/10.1007/s10529-026-03771-z"
+                    <a href="https://doi.org/10.1016/S2468-2667(26)00141-6"
                        target="_blank"
                        rel="noopener noreferrer"
-                       class="publication-link">
+                       class="doi-button">
 
                         DOI
 
@@ -651,73 +716,102 @@
 
 
 
-            <!-- PUBLICATION 2 -->
+            <!-- TUBERCULOSIS -->
 
-            <article class="publication-card">
+            <article class="pub-card global-card">
 
-                <span class="publication-type">
-                    Original Research
+                <span class="pub-type">
+                    GBD Collaboration
                 </span>
 
                 <h3>
-                    Sustainable Valorisation of Untreated
-                    Sugarcane Bagasse and its Extracted Xylan:
-                    A Comparative Study of Enhanced Xylanolytic
-                    Potential among Engineered
-                    <em>E. coli</em> and Donor Bacterium
+                    Global, Regional, and National Burden of
+                    Tuberculosis and Multidrug-Resistant Tuberculosis
+                    by HIV Status, 1990–2023: A Systematic Analysis
+                    for the Global Burden of Disease Study 2023
                 </h3>
 
-                <p class="journal-name">
-                    <strong>
-                        Sugar Tech
-                    </strong>
-                    · 2026
+                <p class="pub-authors">
+                    Ledesma, J.R., Zhang, M., Liew, M.F.,
+                    Dominguez, R.M.V., Whikehart, S.M.L.,
+                    Verma, M., Ma, J. … <strong>Mohammad Ashfaque</strong>
+                    et al.
                 </p>
 
-                <p class="publication-category">
-                    Sugarcane Bagasse · Xylan ·
-                    Recombinant Biotechnology
+                <p class="pub-journal">
+                    <strong>The Lancet Infectious Diseases</strong>
+                    (2026)
                 </p>
+
+                <p class="pub-tags">
+                    Tuberculosis · MDR-TB · HIV · GBD 2023
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1016/S1473-3099(26)00295-1"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ENTERIC DISEASE -->
+
+            <article class="pub-card global-card">
+
+                <span class="pub-type">
+                    GBD Collaboration
+                </span>
+
+                <h3>
+                    Global Burden of Enteric Infectious Diseases,
+                    Diarrhoeal Diseases, and Corresponding
+                    Aetiologies, 1990–2023: A Systematic Analysis
+                    for the Global Burden of Disease Study 2023
+                </h3>
+
+                <p class="pub-authors">
+                    Vongpradith, A., Dominguez, R.M.V.,
+                    Tudor Car, L., Movo, A., Ostroff, S.M.,
+                    He, J., Albertson, S.B. …
+                    <strong>Mohammad Ashfaque</strong> et al.
+                </p>
+
+                <p class="pub-journal">
+                    <strong>The Lancet Infectious Diseases</strong>
+                    (2026)
+                </p>
+
+                <p class="pub-tags">
+                    Enteric Disease · Diarrhoea · GBD 2023
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1016/S1473-3099(26)00194-5"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
 
             </article>
 
 
         </div>
-
-
-        <!-- FEATURED -->
-
-        <div class="featured-publication">
-
-            <span>
-                Featured 2026 Publication
-            </span>
-
-            <h3>
-                Integrated KOH–SDS–Microwave Pretreatment
-                for Enhanced Delignification of Agro-Waste Biomass
-                for Second-Generation Biorefinery Applications
-            </h3>
-
-            <p>
-                This work represents our integrated approach
-                to combining chemical, surfactant and
-                microwave-assisted biomass processing for improved
-                delignification and downstream lignocellulosic
-                biomass utilisation.
-            </p>
-
-            <a href="https://doi.org/10.1007/s10529-026-03771-z"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="publication-link">
-
-                View Publication
-
-            </a>
-
-        </div>
-
 
     </div>
 
@@ -726,59 +820,134 @@
 
 
 <!-- =====================================================
-     2025
+     CORE LIGNOBIO PUBLICATIONS
 ===================================================== -->
 
-<section class="year-section">
+<section class="pub-section">
 
     <div class="container">
 
-        <div class="year-heading">
+
+        <div class="pub-heading">
+
+            <span>
+                LignoBio Research
+            </span>
 
             <h2>
-                2025
+                Biomass, Biofuel & Biotechnology Publications
             </h2>
+
+            <p>
+                Publications most closely aligned with the
+                scientific programme of the Lignocellulose &
+                Biofuel Research Laboratory.
+            </p>
 
         </div>
 
 
-        <div class="publication-grid">
+
+        <!-- =================================================
+             2026
+        ================================================== -->
+
+        <div class="year-title">
+
+            <h3>
+                2026
+            </h3>
+
+        </div>
 
 
-            <!-- PUBLICATION 3 -->
+        <div class="pub-grid">
 
-            <article class="publication-card">
 
-                <span class="publication-type">
+            <!-- SUGAR TECH -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Original Research
+                </span>
+
+                <h3>
+                    Sustainable Valorisation of Untreated Sugarcane
+                    Bagasse and its Extracted Xylan: A Comparative
+                    Study of Enhanced Xylanolytic Potential among
+                    Engineered <em>E. coli</em> and Donor Bacterium
+                </h3>
+
+                <p class="pub-authors">
+                    Saxena, A., Parveen, F., Hussain, A.,
+                    Khubaib, M. & <strong>Mohammad Ashfaque</strong>
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Sugar Tech</strong> (2026)
+                </p>
+
+                <p class="pub-tags">
+                    Sugarcane Bagasse · Xylan · Xylanase ·
+                    Engineered <em>E. coli</em>
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1007/s12355-026-01765-9"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- WASTE & BIOMASS VALORIZATION -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
                     Original Research
                 </span>
 
                 <h3>
                     Statistical Machine Learning Models for
-                    Carbohydrate-Based Bioethanol Production
-                    from Sugarcane Bagasse: Optimization and
-                    Experimental Validation
+                    Carbohydrate-Based Bioethanol Production from
+                    Sugarcane Bagasse: Optimization and Experimental
+                    Validation
                 </h3>
 
-                <p class="journal-name">
-                    <strong>
-                        Waste and Biomass Valorization
-                    </strong>
-                    · 2025
+                <p class="pub-authors">
+                    Parveen, F., Saxena, A., Hussain, A.,
+                    Al-Keridis, L.A., Saeed, M.,
+                    Alabdallah, N.M., Rab, S.O.,
+                    Alshammari, N. & <strong>Mohammad Ashfaque</strong>
                 </p>
 
-                <p class="publication-category">
-                    Bioethanol · Sugarcane Bagasse ·
-                    Process Optimisation · Machine Learning
+                <p class="pub-journal">
+                    <strong>Waste and Biomass Valorization</strong>
+                    — published online 2025; volume publication 2026
                 </p>
 
+                <p class="pub-tags">
+                    Sugarcane Bagasse · Bioethanol ·
+                    Machine Learning · Process Optimisation
+                </p>
 
-                <div class="publication-actions">
+                <div class="pub-actions">
 
                     <a href="https://doi.org/10.1007/s12649-025-03341-w"
                        target="_blank"
                        rel="noopener noreferrer"
-                       class="publication-link">
+                       class="doi-button">
 
                         DOI
 
@@ -789,12 +958,31 @@
             </article>
 
 
+        </div>
 
-            <!-- PUBLICATION 4 -->
 
-            <article class="publication-card">
 
-                <span class="publication-type">
+        <!-- =================================================
+             2025
+        ================================================== -->
+
+        <div class="year-title">
+
+            <h3>
+                2025
+            </h3>
+
+        </div>
+
+
+        <div class="pub-grid">
+
+
+            <!-- BIODEGRADATION -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
                     Original Research
                 </span>
 
@@ -804,25 +992,29 @@
                     Laccase Immobilized in Alginate Matrices
                 </h3>
 
-                <p class="journal-name">
-                    <strong>
-                        Biodegradation
-                    </strong>
-                    · 2025
+                <p class="pub-authors">
+                    Hussain, A., Saxena, A., Parveen, F.,
+                    Bin Sheeha, B., Althomali, O.W.,
+                    Puri, P., Ahmad, I., Ahmad, S. &
+                    <strong>Mohammad Ashfaque</strong>
                 </p>
 
-                <p class="publication-category">
-                    Laccase · Enzyme Immobilisation ·
-                    Dye Degradation · Environmental Biotechnology
+                <p class="pub-journal">
+                    <strong>Biodegradation</strong>,
+                    36, 119 (2025)
                 </p>
 
+                <p class="pub-tags">
+                    Laccase · Immobilisation · Synthetic Dyes ·
+                    Environmental Biotechnology
+                </p>
 
-                <div class="publication-actions">
+                <div class="pub-actions">
 
                     <a href="https://doi.org/10.1007/s10532-025-10218-1"
                        target="_blank"
                        rel="noopener noreferrer"
-                       class="publication-link">
+                       class="doi-button">
 
                         DOI
 
@@ -834,86 +1026,590 @@
 
 
 
-            <!-- PUBLICATION 5 -->
+            <!-- NANOCELLULOSE / NANOLIGNIN -->
 
-            <article class="publication-card">
+            <article class="pub-card">
 
-                <span class="publication-type">
-                    Review / Research Contribution
+                <span class="pub-type">
+                    Review
                 </span>
 
                 <h3>
-                    Nanocellulose and Nanolignin:
-                    Synthesis and Applications
+                    Exploring the Multifaceted Landscape of
+                    Lignocellulosic Biomass-Derived Nanocellulose
+                    and Nanolignin: Synthesis and Applications
                 </h3>
 
-                <p class="journal-name">
-                    <strong>
-                        Polymer Bulletin
-                    </strong>
-                    · 2025
+                <p class="pub-authors">
+                    Saxena, A., Parveen, F., Hussain, A.,
+                    Khubaib, M. & <strong>Mohammad Ashfaque</strong>
                 </p>
 
-                <p class="publication-category">
+                <p class="pub-journal">
+                    <strong>Polymer Bulletin</strong>,
+                    82, 7525–7563 (2025)
+                </p>
+
+                <p class="pub-tags">
                     Nanocellulose · Nanolignin ·
                     Biomaterials · Biomass Valorisation
                 </p>
 
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1007/s00289-025-05855-8"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
             </article>
 
 
-        </div>
 
-    </div>
+            <!-- BIOMASS BIOENERGY -->
 
-</section>
+            <article class="pub-card">
 
-
-
-<!-- =====================================================
-     EARLIER SELECTED WORK
-===================================================== -->
-
-<section class="year-section alt-year">
-
-    <div class="container">
-
-        <div class="year-heading">
-
-            <h2>
-                Earlier Selected Work
-            </h2>
-
-        </div>
-
-
-        <div class="publication-grid">
-
-
-            <article class="publication-card">
-
-                <span class="publication-type">
-                    Research Contribution
+                <span class="pub-type">
+                    Original Research
                 </span>
 
                 <h3>
-                    Metabolic Engineering for Pentose Utilization
+                    Optimized Bioethanol Production from Diverse
+                    Lignocellulosic Biomass Sources Through
+                    Integrative Approach of Plant Cell Wall
+                    Degrading Enzyme Pretreatment
                 </h3>
 
-                <p class="journal-name">
-                    <strong>
-                        Microbiological Research
-                    </strong>
-                    · 2023
+                <p class="pub-authors">
+                    Parveen, F., Hussain, A., Saxena, A.,
+                    Hussain, F.M. & <strong>Mohammad Ashfaque</strong>
                 </p>
 
-                <p class="publication-category">
-                    Pentose Utilisation · Metabolic Engineering ·
-                    Biofuel Biotechnology
+                <p class="pub-journal">
+                    <strong>Biomass and Bioenergy</strong>,
+                    197, 107837 (2025)
                 </p>
+
+                <p class="pub-tags">
+                    PCWDEs · Lignocellulosic Biomass ·
+                    Enzymatic Pretreatment · Bioethanol
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1016/j.biombioe.2025.107837"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
 
             </article>
 
+
+
+            <!-- ALGAL BIOFUELS -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Review
+                </span>
+
+                <h3>
+                    Current Scenario and Global Perspective
+                    of Sustainable Algal Biofuel Production
+                </h3>
+
+                <p class="pub-authors">
+                    Tripathi, G., Hussain, A., Irum,
+                    Firdaus, S., Dubey, P., Ahmad, S.,
+                    <strong>Mohammad Ashfaque</strong>,
+                    Mishra, V. & Farooqui, A.
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Recent Patents on Biotechnology</strong>,
+                    19(4), 276–300 (2025)
+                </p>
+
+                <p class="pub-tags">
+                    Algal Biofuel · Renewable Energy ·
+                    Sustainable Biotechnology
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.2174/0118722083322399240927051315"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- DES -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Review
+                </span>
+
+                <h3>
+                    Facile Fractionation of Lignocellulosic Biomass:
+                    A Review on Promising Green Technology of
+                    Deep Eutectic Solvent for Bioethanol Production
+                </h3>
+
+                <p class="pub-authors">
+                    Parveen, F., Saxena, A., Hussain, A.,
+                    Giri, B.S. & <strong>Mohammad Ashfaque</strong>
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Biomass Conversion and Biorefinery</strong>,
+                    15(9), 13303–13322
+                </p>
+
+                <p class="pub-tags">
+                    Deep Eutectic Solvents · Fractionation ·
+                    Pretreatment · Bioethanol
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1007/s13399-024-06146-4"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             2024
+        ================================================== -->
+
+        <div class="year-title">
+
+            <h3>
+                2024
+            </h3>
+
+        </div>
+
+
+        <div class="pub-grid">
+
+
+            <!-- SECOND GENERATION BIOREFINERIES -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Review
+                </span>
+
+                <h3>
+                    Second-Generation Biorefineries: Single Platform
+                    for the Conversion of Lignocellulosic Wastes
+                    to Environmentally Important Biofuels
+                </h3>
+
+                <p class="pub-authors">
+                    Saxena, A., Parveen, F., Hussain, A.,
+                    Khubaib, M. & <strong>Mohammad Ashfaque</strong>
+                </p>
+
+                <p class="pub-journal">
+                    <strong>
+                        Environmental Science and Pollution Research
+                    </strong>,
+                    31(54), 62623–62654 (2024)
+                </p>
+
+                <p class="pub-tags">
+                    Biorefinery · Lignocellulosic Waste ·
+                    Biofuels · Circular Bioeconomy
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1007/s11356-024-35265-8"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- NANOTECH / ENZYME CASCADE -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Review
+                </span>
+
+                <h3>
+                    A Review of Nanotechnology in Enzyme Cascade
+                    to Address Challenges in Pre-Treating Biomass
+                </h3>
+
+                <p class="pub-authors">
+                    Hussain, A., Parveen, F., Saxena, A. &
+                    <strong>Mohammad Ashfaque</strong>
+                </p>
+
+                <p class="pub-journal">
+                    <strong>
+                        International Journal of Biological Macromolecules
+                    </strong>,
+                    270, 132466 (2024)
+                </p>
+
+                <p class="pub-tags">
+                    Nanotechnology · Enzyme Cascade ·
+                    Biomass Pretreatment · Biocatalysis
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1016/j.ijbiomac.2024.132466"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             2023
+        ================================================== -->
+
+        <div class="year-title">
+
+            <h3>
+                2023
+            </h3>
+
+        </div>
+
+
+        <div class="pub-grid">
+
+
+            <!-- SUGARCANE BAGASSE REVIEW -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Review
+                </span>
+
+                <h3>
+                    An Overview of Pretreatment of Sugarcane
+                    Bagasse for Bio-Ethanol Production
+                </h3>
+
+                <p class="pub-authors">
+                    <strong>Mohammad Ashfaque</strong> &
+                    Fouziya Parveen
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Agrica</strong>,
+                    12(1), 1–15 (2023)
+                </p>
+
+                <p class="pub-tags">
+                    Sugarcane Bagasse · Pretreatment · Bioethanol
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.5958/2394-448X.2023.00001.9"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- TB TOXIN ANTITOXIN -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Review
+                </span>
+
+                <h3>
+                    Toxin-Antitoxin System of
+                    <em>Mycobacterium tuberculosis</em>:
+                    Roles Beyond Stress Sensor and Growth Regulator
+                </h3>
+
+                <p class="pub-authors">
+                    Khan, S., Ahmad, F., Ansari, M.I.,
+                    <strong>Mohammad Ashfaque</strong>,
+                    Islam, M.H. & Khubaib, M.
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Tuberculosis</strong>,
+                    143, 102395 (2023)
+                </p>
+
+                <p class="pub-tags">
+                    Tuberculosis · Toxin-Antitoxin Systems ·
+                    Microbial Physiology
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1016/j.tube.2023.102395"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- METABOLIC ENGINEERING -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Review
+                </span>
+
+                <h3>
+                    Current Status of Metabolic Engineering of
+                    Microorganisms for Bioethanol Production by
+                    Effective Utilization of Pentose Sugars of
+                    Lignocellulosic Biomass
+                </h3>
+
+                <p class="pub-authors">
+                    Saxena, A., Hussain, A., Parveen, F. &
+                    <strong>Mohammad Ashfaque</strong>
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Microbiological Research</strong>,
+                    276, 127478 (2023)
+                </p>
+
+                <p class="pub-tags">
+                    Pentose Sugars · Metabolic Engineering ·
+                    Bioethanol · Lignocellulose
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1016/j.micres.2023.127478"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 5-FU EXOSOMES -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Original Research
+                </span>
+
+                <h3>
+                    High Therapeutic Efficacy of
+                    5-Fluorouracil-Loaded Exosomes Against
+                    Colon Cancer Cells
+                </h3>
+
+                <p class="pub-authors">
+                    Shekh, R., Ahmad, A., Tiwari, R.K.,
+                    Saeed, M., Shukla, R.,
+                    Al-Thubiani, W.S., Ansari, I.A.,
+                    <strong>Mohammad Ashfaque</strong> &
+                    Bajpai, P.
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Chemical Biology & Drug Design</strong>,
+                    101(4), 962–976 (2023)
+                </p>
+
+                <p class="pub-tags">
+                    Exosomes · 5-Fluorouracil ·
+                    Drug Delivery · Cancer Biology
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1111/cbdd.14205"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             2022
+        ================================================== -->
+
+        <div class="year-title">
+
+            <h3>
+                2022
+            </h3>
+
+        </div>
+
+
+        <div class="pub-grid">
+
+
+            <!-- COLEUS AROMATICUS -->
+
+            <article class="pub-card">
+
+                <span class="pub-type">
+                    Original Research
+                </span>
+
+                <h3>
+                    Ethanolic Extract of
+                    <em>Coleus aromaticus</em> Leaves Impedes
+                    the Proliferation and Instigates Apoptotic
+                    Cell Death in Liver Cancer HepG2 Cells Through
+                    Repressing JAK/STAT Cascade
+                </h3>
+
+                <p class="pub-authors">
+                    Shekh, R., Tiwari, R.K., Ahmad, A.,
+                    Ahmad, I., Alabdallah, N.M.,
+                    Saeed, M., Ansari, I.A., Mishra, A.,
+                    <strong>Mohammad Ashfaque</strong> &
+                    Bajpai, P.
+                </p>
+
+                <p class="pub-journal">
+                    <strong>Journal of Food Biochemistry</strong>,
+                    46(10), e14368 (2022)
+                </p>
+
+                <p class="pub-tags">
+                    <em>Coleus aromaticus</em> · HepG2 ·
+                    Apoptosis · JAK/STAT
+                </p>
+
+                <div class="pub-actions">
+
+                    <a href="https://doi.org/10.1111/jfbc.14368"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="doi-button">
+
+                        DOI
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="publication-note">
+
+            Publications are arranged primarily according to
+            their final bibliographic year. For articles published
+            online before assignment to a journal volume, the
+            online-publication status is indicated where relevant.
 
         </div>
 
@@ -924,77 +1620,57 @@
 
 
 <!-- =====================================================
-     RESEARCH AREAS REPRESENTED
+     RESEARCH PORTFOLIO
 ===================================================== -->
 
-<section class="section publication-fields">
+<section class="section portfolio-section">
 
     <div class="container">
 
         <div class="section-title">
 
             <span>
-                Publication Portfolio
+                Research Portfolio
             </span>
 
             <h2>
-                Research Areas Represented
+                Areas Represented in Our Publications
             </h2>
-
-            <p>
-                Our publications span multiple interconnected
-                areas within lignocellulosic biotechnology
-                and sustainable bioprocessing.
-            </p>
 
         </div>
 
 
-        <div class="field-tags">
+        <div class="portfolio-tags">
 
-            <span>
-                Biomass Pretreatment
-            </span>
+            <span>Biomass Pretreatment</span>
 
-            <span>
-                Lignocellulosic Bioethanol
-            </span>
+            <span>Lignocellulosic Bioethanol</span>
 
-            <span>
-                Enzyme Technology
-            </span>
+            <span>Second-Generation Biorefineries</span>
 
-            <span>
-                Laccase Biotechnology
-            </span>
+            <span>Enzyme Technology</span>
 
-            <span>
-                Enzyme Immobilisation
-            </span>
+            <span>Cellulases & Xylanases</span>
 
-            <span>
-                Pentose Utilisation
-            </span>
+            <span>Laccase Biotechnology</span>
 
-            <span>
-                Nanocellulose
-            </span>
+            <span>Enzyme Immobilisation</span>
 
-            <span>
-                Nanolignin
-            </span>
+            <span>Nanobiocatalysis</span>
 
-            <span>
-                Environmental Biotechnology
-            </span>
+            <span>Deep Eutectic Solvents</span>
 
-            <span>
-                Biomass Valorisation
-            </span>
+            <span>Pentose Utilisation</span>
 
-            <span>
-                Sustainable Biorefineries
-            </span>
+            <span>Metabolic Engineering</span>
+
+            <span>Nanocellulose</span>
+
+            <span>Nanolignin</span>
+
+            <span>Environmental Biotechnology</span>
+
+            <span>Global Health Collaboration</span>
 
         </div>
 
@@ -1008,7 +1684,7 @@
      SCHOLARLY PROFILES
 ===================================================== -->
 
-<section class="section scholarly-profiles">
+<section class="section profile-section">
 
     <div class="container">
 
@@ -1017,32 +1693,39 @@
         </h2>
 
         <p>
-            Additional publications, citation metrics and
-            bibliographic information can be accessed through
-            the investigator's scholarly profiles.
+            Citation metrics, additional publications and
+            bibliographic records can be accessed through
+            the investigator's academic profiles.
         </p>
 
 
-        <div class="profile-row">
+        <div class="profile-buttons">
 
             <a href="#"
-               class="publication-link">
+               class="doi-button">
 
                 Google Scholar
 
             </a>
 
             <a href="#"
-               class="publication-link">
+               class="doi-button">
 
                 ORCID
 
             </a>
 
             <a href="#"
-               class="publication-link">
+               class="doi-button">
 
                 ResearchGate
+
+            </a>
+
+            <a href="#"
+               class="doi-button">
+
+                LinkedIn
 
             </a>
 
