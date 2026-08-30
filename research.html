@@ -9,13 +9,414 @@
           content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Meet the researchers and students of LignoBio Lab, Lignocellulose & Biofuel Research Laboratory.">
+          content="Research at LignoBio Lab focuses on lignocellulosic biomass valorisation, biomass pretreatment, enzyme technology, second-generation biofuels, lignin and cellulose valorisation, environmental biotechnology and sustainable biorefineries.">
+
+    <meta name="keywords"
+          content="lignocellulosic biomass, biomass valorisation, lignocellulose, bioethanol, second generation biofuel, cellulase, laccase, lignin valorisation, biomass pretreatment, biorefinery">
 
     <title>
-        People | LignoBio Lab
+        Research | LignoBio Lab
     </title>
 
     <link rel="stylesheet" href="style.css">
+
+
+    <!-- =====================================================
+         PAGE-SPECIFIC STYLING
+    ====================================================== -->
+
+    <style>
+
+        /* PAGE HERO */
+
+        .research-hero {
+            background: linear-gradient(
+                135deg,
+                #12372a 0%,
+                #1c4d3a 100%
+            );
+            color: white;
+            padding: 95px 0 85px;
+        }
+
+        .research-hero-content {
+            max-width: 900px;
+        }
+
+        .research-hero .eyebrow {
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #cfe3ba;
+            margin-bottom: 15px;
+        }
+
+        .research-hero h1 {
+            font-size: 3.7rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .research-hero p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #e6efe9;
+            max-width: 850px;
+        }
+
+
+        /* RESEARCH PHILOSOPHY */
+
+        .research-philosophy {
+            display: grid;
+            grid-template-columns: 0.9fr 1.3fr;
+            gap: 70px;
+            align-items: start;
+        }
+
+        .philosophy-heading span {
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #63806b;
+            margin-bottom: 12px;
+        }
+
+        .philosophy-heading h2 {
+            color: #173b2d;
+            font-size: 2.35rem;
+            line-height: 1.25;
+        }
+
+        .philosophy-text p {
+            color: #58675f;
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+
+
+        /* THEMES SECTION */
+
+        .research-themes-section {
+            background: #f4f7f3;
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+        }
+
+
+        /* RESEARCH PLACARDS */
+
+        .research-placard {
+            background: #ffffff;
+            padding: 34px;
+            border-radius: 10px;
+            border-top: 5px solid #52745d;
+            box-shadow: 0 7px 24px rgba(20, 55, 42, 0.07);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition:
+                transform 0.25s ease,
+                box-shadow 0.25s ease;
+        }
+
+        .research-placard:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 14px 32px rgba(20, 55, 42, 0.12);
+        }
+
+        .placard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .theme-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 45px;
+            height: 32px;
+            background: #173b2d;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 800;
+        }
+
+        .theme-category {
+            color: #6a836f;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .research-placard h3 {
+            color: #173b2d;
+            font-size: 1.55rem;
+            line-height: 1.3;
+            margin-bottom: 16px;
+        }
+
+        .research-placard > p {
+            color: #5e6b64;
+            line-height: 1.75;
+            margin-bottom: 22px;
+        }
+
+
+        /* TAGS */
+
+        .theme-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: auto;
+        }
+
+        .theme-tags span {
+            background: #edf3ea;
+            color: #365644;
+            border: 1px solid #d8e2d5;
+            border-radius: 20px;
+            padding: 7px 12px;
+            font-size: 0.78rem;
+        }
+
+
+        /* BIOREFINERY FRAMEWORK */
+
+        .framework-section {
+            background: #ffffff;
+        }
+
+        .framework-wrapper {
+            margin-top: 45px;
+        }
+
+        .framework-flow {
+            display: grid;
+            grid-template-columns:
+                1fr auto
+                1fr auto
+                1fr auto
+                1fr auto
+                1fr;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .flow-box {
+            background: #173b2d;
+            color: white;
+            min-height: 105px;
+            padding: 20px 15px;
+            border-radius: 7px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .flow-box strong {
+            display: block;
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .flow-box span {
+            color: #d5e3d8;
+            font-size: 0.78rem;
+            line-height: 1.4;
+        }
+
+        .flow-arrow {
+            color: #6b8975;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+
+        /* PRODUCT OUTCOMES */
+
+        .outcomes-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 28px;
+        }
+
+        .outcome-card {
+            background: #edf3ea;
+            padding: 22px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .outcome-card h4 {
+            color: #173b2d;
+            margin-bottom: 5px;
+        }
+
+        .outcome-card p {
+            color: #657268;
+            font-size: 0.82rem;
+        }
+
+
+        /* CURRENT DIRECTIONS */
+
+        .directions-section {
+            background: #f4f7f3;
+        }
+
+        .directions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .direction-card {
+            background: white;
+            padding: 28px;
+            border-radius: 8px;
+            border-left: 4px solid #66836e;
+        }
+
+        .direction-card span {
+            display: block;
+            color: #6d8975;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .direction-card h3 {
+            color: #173b2d;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        .direction-card p {
+            color: #606d65;
+            line-height: 1.7;
+            font-size: 0.92rem;
+        }
+
+
+        /* COLLABORATION */
+
+        .research-collaboration {
+            background: #173b2d;
+            color: white;
+            padding: 85px 0;
+            text-align: center;
+        }
+
+        .research-collaboration span {
+            display: block;
+            color: #c9dfb5;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .research-collaboration h2 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+
+        .research-collaboration p {
+            color: #dfe9e2;
+            max-width: 760px;
+            margin: 0 auto 28px;
+            line-height: 1.7;
+        }
+
+
+        /* ACTIVE LINK */
+
+        .nav-links .active-link {
+            color: #cfe5b6;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE DESIGN
+        ====================================================== */
+
+        @media (max-width: 950px) {
+
+            .research-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .research-philosophy {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .framework-flow {
+                grid-template-columns: 1fr;
+            }
+
+            .flow-arrow {
+                transform: rotate(90deg);
+                text-align: center;
+            }
+
+            .outcomes-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .directions-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .research-hero {
+                padding: 65px 0 60px;
+            }
+
+            .research-hero h1 {
+                font-size: 2.6rem;
+            }
+
+            .research-placard {
+                padding: 25px;
+            }
+
+            .placard-header {
+                align-items: flex-start;
+            }
+
+            .outcomes-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -40,7 +441,6 @@
                      class="lab-logo">
 
             </div>
-
 
             <div class="lab-name">
 
@@ -72,14 +472,14 @@
             </li>
 
             <li>
-                <a href="research.html">
+                <a href="research.html"
+                   class="active-link">
                     Research
                 </a>
             </li>
 
             <li>
-                <a href="people.html"
-                   class="active-link">
+                <a href="people.html">
                     People
                 </a>
             </li>
@@ -111,26 +511,34 @@
 
 
 <!-- =====================================================
-     PAGE HERO
+     RESEARCH HERO
 ===================================================== -->
 
-<section class="page-hero">
+<section class="research-hero">
 
     <div class="container">
 
-        <span class="page-eyebrow">
-            Our Team
-        </span>
+        <div class="research-hero-content">
 
-        <h1>
-            People
-        </h1>
+            <span class="eyebrow">
+                Our Science
+            </span>
 
-        <p>
-            Meet the researchers working at the intersection of
-            lignocellulosic biomass, biotechnology, enzymology,
-            biofuels and sustainable biorefinery development.
-        </p>
+            <h1>
+                Research
+            </h1>
+
+            <p>
+                LignoBio Lab investigates the sustainable
+                deconstruction and valorisation of lignocellulosic
+                biomass through integrated chemical, biochemical,
+                microbial and process-engineering approaches.
+                Our research aims to transform renewable biomass
+                into fuels, enzymes, chemicals and functional
+                materials within sustainable biorefinery systems.
+            </p>
+
+        </div>
 
     </div>
 
@@ -139,114 +547,56 @@
 
 
 <!-- =====================================================
-     PRINCIPAL INVESTIGATOR
+     RESEARCH PHILOSOPHY
 ===================================================== -->
 
 <section class="section">
 
     <div class="container">
 
-        <div class="section-title">
+        <div class="research-philosophy">
 
-            <span>
-                Leadership
-            </span>
+            <div class="philosophy-heading">
 
-            <h2>
-                Principal Investigator
-            </h2>
-
-        </div>
-
-
-        <div class="people-pi">
-
-
-            <!-- PI PHOTO -->
-
-            <div class="people-photo">
-
-                <img src="mohammad-ashfaque.JPG"
-                     alt="Dr. Mohammad Ashfaque">
-
-            </div>
-
-
-            <!-- PI DETAILS -->
-
-            <div class="people-info">
-
-                <span class="research-label">
-                    Principal Investigator
+                <span>
+                    Research Philosophy
                 </span>
 
                 <h2>
-                    Dr. Mohammad Ashfaque
+                    From Biomass Recalcitrance to Complete
+                    Resource Valorisation
                 </h2>
 
-                <h3>
-                    Assistant Professor
-                </h3>
+            </div>
 
 
-                <p>
-
-                    Department of Biosciences
-                    <br>
-
-                    Integral University
-                    <br>
-
-                    Lucknow, Uttar Pradesh, India
-
-                </p>
-
+            <div class="philosophy-text">
 
                 <p>
-
-                    His research focuses on lignocellulosic biomass
-                    valorisation, biomass pretreatment, industrial
-                    enzymes, bioethanol production, biocatalysis,
-                    lignin valorisation and integrated sustainable
-                    biorefineries.
-
+                    Lignocellulosic biomass is an abundant renewable
+                    carbon resource, but its complex association of
+                    cellulose, hemicellulose and lignin limits efficient
+                    biological conversion. Overcoming this structural
+                    recalcitrance remains central to the development
+                    of economically viable lignocellulosic biorefineries.
                 </p>
-
 
                 <p>
-
-                    The broader objective of the laboratory is to
-                    develop efficient biological and physicochemical
-                    approaches for converting renewable biomass into
-                    fuels, chemicals, enzymes and functional
-                    materials.
-
+                    Our research integrates biomass fractionation,
+                    physicochemical pretreatment, microbial enzyme
+                    production, enzymatic hydrolysis, fermentation
+                    and downstream valorisation to improve recovery
+                    and utilisation of individual biomass fractions.
                 </p>
 
-
-                <div class="profile-links">
-
-                    <a href="#"
-                       class="profile-button">
-                        Google Scholar
-                    </a>
-
-                    <a href="#"
-                       class="profile-button">
-                        ORCID
-                    </a>
-
-                    <a href="#"
-                       class="profile-button">
-                        ResearchGate
-                    </a>
-
-                    <a href="#"
-                       class="profile-button">
-                        LinkedIn
-                    </a>
-
-                </div>
+                <p>
+                    Rather than focusing exclusively on a single
+                    product such as ethanol, our long-term objective
+                    is to establish integrated strategies in which
+                    cellulose, hemicellulose and lignin are directed
+                    toward complementary fuels, chemicals and
+                    functional materials.
+                </p>
 
             </div>
 
@@ -259,70 +609,436 @@
 
 
 <!-- =====================================================
-     CURRENT PHD RESEARCHER
+     SIX RESEARCH THEMES
 ===================================================== -->
 
-<section class="section team-section">
+<section class="section research-themes-section">
 
     <div class="container">
 
         <div class="section-title">
 
             <span>
-                Current Researcher
+                Research Portfolio
             </span>
 
             <h2>
-                PhD Research Scholar
+                Major Research Themes
             </h2>
 
             <p>
-                Current doctoral research being conducted within
-                LignoBio Lab.
+                Our research portfolio spans the complete
+                lignocellulosic biomass conversion chain,
+                from feedstock deconstruction to biological
+                conversion, product development and
+                sustainability assessment.
             </p>
 
         </div>
 
 
-        <div class="team-grid single-team">
+        <div class="research-grid">
 
 
-            <!-- HASSAN ALI -->
+            <!-- =================================================
+                 THEME 01
+            ================================================== -->
 
-            <div class="team-card">
+            <article class="research-placard">
 
-                <div class="team-placeholder">
-                    Photo
+                <div class="placard-header">
+
+                    <span class="theme-number">
+                        01
+                    </span>
+
+                    <span class="theme-category">
+                        Biomass Deconstruction
+                    </span>
+
                 </div>
 
+
                 <h3>
-                    Hassan Ali
+                    Biomass Pretreatment & Fractionation
                 </h3>
 
-                <p class="team-role">
-                    PhD Research Scholar
-                </p>
 
-                <p class="research-topic">
-
-                    <strong>
-                        Research Topic:
-                    </strong>
-
-                    <br>
-
-                    Integrated Biorefinery Approach for Valorisation
-                    of Sugar Beet Bagasse into Bioethanol and
-                    Functional Materials for Environmental Remediation
-
+                <p>
+                    We develop and evaluate pretreatment strategies
+                    capable of disrupting the recalcitrant
+                    lignocellulosic matrix while improving cellulose
+                    accessibility, removing or redistributing lignin
+                    and preserving fermentable carbohydrate fractions.
+                    Particular emphasis is placed on integrating
+                    physicochemical treatments with subsequent
+                    enzymatic conversion.
                 </p>
 
 
-                <span class="status-badge current-status">
-                    Ongoing
-                </span>
+                <div class="theme-tags">
 
-            </div>
+                    <span>
+                        Alkali Pretreatment
+                    </span>
+
+                    <span>
+                        Microwave Processing
+                    </span>
+
+                    <span>
+                        Surfactant-Assisted Pretreatment
+                    </span>
+
+                    <span>
+                        Deep Eutectic Solvents
+                    </span>
+
+                    <span>
+                        Delignification
+                    </span>
+
+                    <span>
+                        Biomass Characterisation
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 THEME 02
+            ================================================== -->
+
+            <article class="research-placard">
+
+                <div class="placard-header">
+
+                    <span class="theme-number">
+                        02
+                    </span>
+
+                    <span class="theme-category">
+                        Biological Catalysis
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Enzyme Technology & Biocatalysis
+                </h3>
+
+
+                <p>
+                    Our enzymology programme investigates microbial
+                    enzymes involved in lignocellulose deconstruction
+                    and environmental biotechnology. Research includes
+                    enzyme production, optimisation, purification,
+                    characterisation, immobilisation and application
+                    of biocatalysts under process-relevant conditions.
+                </p>
+
+
+                <div class="theme-tags">
+
+                    <span>
+                        Cellulases
+                    </span>
+
+                    <span>
+                        Xylanases
+                    </span>
+
+                    <span>
+                        Pectinases
+                    </span>
+
+                    <span>
+                        Laccases
+                    </span>
+
+                    <span>
+                        Enzyme Immobilisation
+                    </span>
+
+                    <span>
+                        Nanobiocatalysis
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 THEME 03
+            ================================================== -->
+
+            <article class="research-placard">
+
+                <div class="placard-header">
+
+                    <span class="theme-number">
+                        03
+                    </span>
+
+                    <span class="theme-category">
+                        Renewable Fuels
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Second-Generation Biofuels
+                </h3>
+
+
+                <p>
+                    We investigate conversion of agricultural and
+                    lignocellulosic residues into second-generation
+                    bioethanol through integrated pretreatment,
+                    enzymatic hydrolysis and fermentation. The work
+                    addresses both carbohydrate accessibility and
+                    efficient microbial conversion of biomass-derived
+                    sugars.
+                </p>
+
+
+                <div class="theme-tags">
+
+                    <span>
+                        2G Bioethanol
+                    </span>
+
+                    <span>
+                        Saccharification
+                    </span>
+
+                    <span>
+                        Fermentation
+                    </span>
+
+                    <span>
+                        SSF
+                    </span>
+
+                    <span>
+                        Pentose Utilisation
+                    </span>
+
+                    <span>
+                        Process Optimisation
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 THEME 04
+            ================================================== -->
+
+            <article class="research-placard">
+
+                <div class="placard-header">
+
+                    <span class="theme-number">
+                        04
+                    </span>
+
+                    <span class="theme-category">
+                        Biomass Valorisation
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Lignin & Cellulose Valorisation
+                </h3>
+
+
+                <p>
+                    A central objective of our emerging biorefinery
+                    research is to move beyond carbohydrate-only
+                    utilisation. We investigate strategies for
+                    recovering and transforming lignin and cellulose
+                    fractions into nanomaterials, adsorbents,
+                    functional biomaterials and other high-value
+                    renewable products.
+                </p>
+
+
+                <div class="theme-tags">
+
+                    <span>
+                        Lignin Valorisation
+                    </span>
+
+                    <span>
+                        Nanocellulose
+                    </span>
+
+                    <span>
+                        Nanolignin
+                    </span>
+
+                    <span>
+                        Functional Materials
+                    </span>
+
+                    <span>
+                        Biomass-Derived Adsorbents
+                    </span>
+
+                    <span>
+                        Advanced Bioproducts
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 THEME 05
+            ================================================== -->
+
+            <article class="research-placard">
+
+                <div class="placard-header">
+
+                    <span class="theme-number">
+                        05
+                    </span>
+
+                    <span class="theme-category">
+                        Environmental Solutions
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Environmental Biotechnology
+                </h3>
+
+
+                <p>
+                    We apply microbial systems, oxidative enzymes,
+                    immobilised biocatalysts and nano-enabled
+                    biological approaches to environmental
+                    remediation. Current interests include degradation
+                    of synthetic dyes, pollutant removal and
+                    development of biomass-derived materials for
+                    wastewater treatment.
+                </p>
+
+
+                <div class="theme-tags">
+
+                    <span>
+                        Dye Degradation
+                    </span>
+
+                    <span>
+                        Laccase Remediation
+                    </span>
+
+                    <span>
+                        Wastewater Treatment
+                    </span>
+
+                    <span>
+                        Nano-Biocatalysts
+                    </span>
+
+                    <span>
+                        Pollutant Removal
+                    </span>
+
+                    <span>
+                        Environmental Remediation
+                    </span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 THEME 06
+            ================================================== -->
+
+            <article class="research-placard">
+
+                <div class="placard-header">
+
+                    <span class="theme-number">
+                        06
+                    </span>
+
+                    <span class="theme-category">
+                        Systems Integration
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Sustainable Biorefineries
+                </h3>
+
+
+                <p>
+                    We aim to connect experimental biomass conversion
+                    with whole-process evaluation. This includes
+                    integration of multiple biomass fractions,
+                    optimisation of material flows and assessment
+                    of technological feasibility through
+                    techno-economic and life-cycle perspectives.
+                </p>
+
+
+                <div class="theme-tags">
+
+                    <span>
+                        Integrated Biorefineries
+                    </span>
+
+                    <span>
+                        Mass Balance
+                    </span>
+
+                    <span>
+                        Process Modelling
+                    </span>
+
+                    <span>
+                        Techno-Economic Assessment
+                    </span>
+
+                    <span>
+                        Life-Cycle Assessment
+                    </span>
+
+                    <span>
+                        Circular Bioeconomy
+                    </span>
+
+                </div>
+
+            </article>
+
 
         </div>
 
@@ -333,113 +1049,191 @@
 
 
 <!-- =====================================================
-     PHD THESIS SUBMITTED
+     INTEGRATED BIOREFINERY FRAMEWORK
 ===================================================== -->
 
-<section class="section">
+<section class="section framework-section">
 
     <div class="container">
 
         <div class="section-title">
 
             <span>
-                Doctoral Researchers
+                Integrated Research Framework
             </span>
 
             <h2>
-                PhD Thesis Submitted
+                From Renewable Biomass to Sustainable Products
             </h2>
 
             <p>
-                Doctoral researchers who have completed their
-                research work and submitted their PhD theses.
+                Our research connects individual experimental
+                operations into an integrated biomass
+                valorisation framework.
             </p>
 
         </div>
 
 
-        <div class="team-grid two-team">
+        <div class="framework-wrapper">
+
+            <div class="framework-flow">
 
 
-            <!-- AYUSH SAXENA -->
-
-            <div class="team-card">
-
-                <div class="team-placeholder">
-                    Photo
-                </div>
-
-                <h3>
-                    Ayush Saxena
-                </h3>
-
-                <p class="team-role">
-                    PhD Researcher
-                </p>
-
-
-                <p class="research-topic">
+                <div class="flow-box">
 
                     <strong>
-                        Thesis Topic:
+                        Biomass
                     </strong>
 
-                    <br>
+                    <span>
+                        Agricultural &
+                        lignocellulosic residues
+                    </span>
 
-                    Improved Utilization of Pentose Sugar by
-                    Genetically Engineered
-                    <em>E. coli</em>
-                    for Enhanced Ethanol Production
-
-                </p>
+                </div>
 
 
-                <span class="status-badge submitted-status">
-                    Thesis Submitted
-                </span>
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-box">
+
+                    <strong>
+                        Pretreatment
+                    </strong>
+
+                    <span>
+                        Structural disruption
+                        & delignification
+                    </span>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-box">
+
+                    <strong>
+                        Fractionation
+                    </strong>
+
+                    <span>
+                        Cellulose • Hemicellulose
+                        • Lignin
+                    </span>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-box">
+
+                    <strong>
+                        Bioconversion
+                    </strong>
+
+                    <span>
+                        Enzymes • Hydrolysis
+                        • Fermentation
+                    </span>
+
+                </div>
+
+
+                <div class="flow-arrow">
+                    →
+                </div>
+
+
+                <div class="flow-box">
+
+                    <strong>
+                        Valorisation
+                    </strong>
+
+                    <span>
+                        Fuels • Chemicals
+                        • Materials
+                    </span>
+
+                </div>
+
 
             </div>
 
 
 
-            <!-- AKHTAR HUSSAIN -->
+            <div class="outcomes-grid">
 
-            <div class="team-card">
 
-                <div class="team-placeholder">
-                    Photo
+                <div class="outcome-card">
+
+                    <h4>
+                        Biofuels
+                    </h4>
+
+                    <p>
+                        Lignocellulosic bioethanol
+                        and renewable energy products
+                    </p>
+
                 </div>
 
-                <h3>
-                    Akhtar Hussain
-                </h3>
 
-                <p class="team-role">
-                    PhD Researcher
-                </p>
+                <div class="outcome-card">
 
+                    <h4>
+                        Enzymes
+                    </h4>
 
-                <p class="research-topic">
+                    <p>
+                        Biomass-degrading and
+                        environmental biocatalysts
+                    </p>
 
-                    <strong>
-                        Thesis Topic:
-                    </strong>
-
-                    <br>
-
-                    Lignocellulosic Biomass Hydrolysis Using
-                    Nanobiocatalyst for Enhanced 2G Bioethanol
-                    Production
-
-                </p>
+                </div>
 
 
-                <span class="status-badge submitted-status">
-                    Thesis Submitted
-                </span>
+                <div class="outcome-card">
+
+                    <h4>
+                        Materials
+                    </h4>
+
+                    <p>
+                        Lignin- and cellulose-derived
+                        functional materials
+                    </p>
+
+                </div>
+
+
+                <div class="outcome-card">
+
+                    <h4>
+                        Environmental Solutions
+                    </h4>
+
+                    <p>
+                        Adsorbents, remediation
+                        and wastewater applications
+                    </p>
+
+                </div>
+
 
             </div>
-
 
         </div>
 
@@ -450,138 +1244,91 @@
 
 
 <!-- =====================================================
-     PHD ALUMNI
+     CURRENT & EMERGING DIRECTIONS
 ===================================================== -->
 
-<section class="section alumni-section">
+<section class="section directions-section">
 
     <div class="container">
 
         <div class="section-title">
 
             <span>
-                Former Researchers
+                Emerging Directions
             </span>
 
             <h2>
-                PhD Alumni
+                Where Our Research Is Moving
             </h2>
 
             <p>
-                Researchers who successfully completed their
-                doctoral research under the laboratory's
-                research supervision.
+                Our research programme continues to evolve
+                toward higher-value utilisation of all
+                lignocellulosic biomass fractions.
             </p>
 
         </div>
 
 
-        <div class="team-grid two-team">
+        <div class="directions-grid">
 
 
-            <!-- RAFIA SHEKH -->
+            <div class="direction-card">
 
-            <div class="team-card alumni-card">
-
-                <div class="team-placeholder">
-                    Photo
-                </div>
+                <span>
+                    Direction 01
+                </span>
 
                 <h3>
-                    Rafia Shekh
+                    Integrated Feedstock Biorefineries
                 </h3>
 
-                <p class="team-role">
-                    PhD Completed
+                <p>
+                    Development of integrated processes in which
+                    carbohydrate conversion to biofuels is combined
+                    with recovery and valorisation of lignin and
+                    residual biomass fractions.
                 </p>
-
-
-                <p class="research-topic">
-
-                    <strong>
-                        PhD Thesis:
-                    </strong>
-
-                    <br>
-
-                    Proteomic Profiling of Exosomes from
-                    Gallbladder Cancer Patients for Identification
-                    and Characterization of a Prognostic Marker
-
-                </p>
-
-
-                <div class="scholar-actions">
-
-                    <a href="https://shodhganga.inflibnet.ac.in/handle/10603/598540"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="profile-button">
-
-                        View Thesis
-
-                    </a>
-
-                </div>
-
-
-                <span class="status-badge completed-status">
-                    PhD Completed
-                </span>
 
             </div>
 
 
+            <div class="direction-card">
 
-            <!-- FOUZIYA PARVEEN -->
-
-            <div class="team-card alumni-card">
-
-                <div class="team-placeholder">
-                    Photo
-                </div>
+                <span>
+                    Direction 02
+                </span>
 
                 <h3>
-                    Fouziya Parveen
+                    Advanced Biomass-Derived Materials
                 </h3>
 
-                <p class="team-role">
-                    PhD Completed
+                <p>
+                    Exploration of lignin, cellulose and other
+                    biomass-derived fractions as precursors for
+                    functional materials, adsorbents and
+                    environmental remediation systems.
                 </p>
 
-
-                <p class="research-topic">
-
-                    <strong>
-                        PhD Thesis:
-                    </strong>
-
-                    <br>
-
-                    Consolidated Bioprocessing of Lignocellulosic
-                    Feedstock for Second Generation Bioethanol
-                    Conversion
-
-                </p>
+            </div>
 
 
-                <div class="scholar-actions">
+            <div class="direction-card">
 
-                    <a href="https://shodhganga.inflibnet.ac.in/handle/10603/711005"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="profile-button">
-
-                        View Thesis
-
-                    </a>
-
-                </div>
-
-
-                <span class="status-badge completed-status">
-                    PhD Completed
+                <span>
+                    Direction 03
                 </span>
+
+                <h3>
+                    Sustainable Process Evaluation
+                </h3>
+
+                <p>
+                    Integration of experimental process development
+                    with mass balance, techno-economic assessment
+                    and life-cycle evaluation to identify
+                    practically scalable biorefinery routes.
+                </p>
 
             </div>
 
@@ -595,30 +1342,28 @@
 
 
 <!-- =====================================================
-     JOIN THE LAB
+     COLLABORATION
 ===================================================== -->
 
-<section class="research-cta">
+<section class="research-collaboration">
 
     <div class="container">
 
-        <span class="research-label">
-            Join LignoBio Lab
+        <span>
+            Research Collaboration
         </span>
 
         <h2>
-            Interested in Research With Us?
+            Collaborate With LignoBio Lab
         </h2>
 
         <p>
-
-            We welcome motivated students interested in
-            lignocellulosic biomass valorisation, biofuels,
-            enzyme technology, biocatalysis, lignin utilisation
-            and sustainable biorefinery research.
-
+            We welcome collaborations in lignocellulosic biomass
+            valorisation, enzyme technology, second-generation
+            biofuels, lignin and cellulose utilisation,
+            environmental biotechnology, biocatalysis and
+            sustainable biorefinery development.
         </p>
-
 
         <a href="index.html#contact"
            class="btn btn-primary">
@@ -641,7 +1386,6 @@
 
     <div class="container">
 
-
         <div class="footer-grid">
 
 
@@ -652,21 +1396,13 @@
                 </h3>
 
                 <p>
-
                     Lignocellulose & Biofuel Research Laboratory
-
                     <br>
-
                     Department of Biosciences
-
                     <br>
-
                     Integral University
-
                     <br>
-
                     Lucknow, Uttar Pradesh, India
-
                 </p>
 
             </div>
@@ -716,7 +1452,6 @@
             All rights reserved.
 
         </div>
-
 
     </div>
 
