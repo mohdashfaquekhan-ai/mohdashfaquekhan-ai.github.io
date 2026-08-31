@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Research opportunities at LignoBio Lab for PhD scholars, postgraduate students, interns, collaborators and visiting researchers interested in lignocellulosic biomass, biofuels, enzyme technology and sustainable biorefineries.">
+
+    <title>
+        Opportunities | LignoBio Lab
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .opportunity-hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #12372a 0%,
+                    #1c4d3a 100%
+                );
+
+            color: white;
+
+            padding: 90px 0 80px;
+        }
+
+        .opportunity-hero span {
+            display: inline-block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2.5px;
+
+            font-size: 0.8rem;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .opportunity-hero h1 {
+            font-size: 3.5rem;
+
+            line-height: 1.1;
+
+            margin-bottom: 18px;
+        }
+
+        .opportunity-hero p {
+            max-width: 850px;
+
+            color: #e4eee7;
+
+            font-size: 1.15rem;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           INTRO
+        ====================================================== */
+
+        .join-intro {
+            max-width: 900px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .join-intro h2 {
+            color: #173b2d;
+
+            font-size: 2.35rem;
+
+            margin-bottom: 18px;
+        }
+
+        .join-intro p {
+            color: #5b6861;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           OPPORTUNITY CARDS
+        ====================================================== */
+
+        .opportunity-section {
+            background: #f5f8f4;
+        }
+
+        .opportunity-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 28px;
+        }
+
+        .opportunity-card {
+            background: white;
+
+            padding: 32px;
+
+            border-radius: 10px;
+
+            border-top: 5px solid #5e7d67;
+
+            box-shadow:
+                0 7px 24px
+                rgba(20, 55, 42, 0.07);
+        }
+
+        .opportunity-card span {
+            display: inline-block;
+
+            color: #66816d;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            font-size: 0.75rem;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .opportunity-card h3 {
+            color: #173b2d;
+
+            font-size: 1.45rem;
+
+            margin-bottom: 13px;
+        }
+
+        .opportunity-card p {
+            color: #5f6c64;
+
+            line-height: 1.75;
+
+            margin-bottom: 16px;
+        }
+
+        .opportunity-card ul {
+            margin-left: 18px;
+
+            color: #5f6c64;
+        }
+
+        .opportunity-card li {
+            margin-bottom: 7px;
+        }
+
+
+        /* =====================================================
+           RESEARCH AREAS
+        ====================================================== */
+
+        .interest-grid {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 11px;
+
+            max-width: 1000px;
+
+            margin: auto;
+        }
+
+        .interest-grid span {
+            background: #edf3ea;
+
+            color: #31533f;
+
+            border: 1px solid #d4dfd5;
+
+            padding: 9px 15px;
+
+            border-radius: 24px;
+
+            font-size: 0.83rem;
+        }
+
+
+        /* =====================================================
+           WHAT WE LOOK FOR
+        ====================================================== */
+
+        .candidate-section {
+            background: #edf4e8;
+        }
+
+        .candidate-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .candidate-card {
+            background: white;
+
+            padding: 26px;
+
+            border-radius: 8px;
+        }
+
+        .candidate-card h3 {
+            color: #173b2d;
+
+            margin-bottom: 10px;
+        }
+
+        .candidate-card p {
+            color: #606d65;
+
+            line-height: 1.7;
+
+            font-size: 0.92rem;
+        }
+
+
+        /* =====================================================
+           HOW TO CONTACT
+        ====================================================== */
+
+        .apply-box {
+            background: #173b2d;
+
+            color: white;
+
+            border-radius: 10px;
+
+            padding: 45px;
+
+            text-align: center;
+        }
+
+        .apply-box span {
+            display: block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 0.77rem;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .apply-box h2 {
+            font-size: 2.3rem;
+
+            margin-bottom: 15px;
+        }
+
+        .apply-box p {
+            max-width: 760px;
+
+            margin: 0 auto 25px;
+
+            color: #dfe9e2;
+
+            line-height: 1.75;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 850px) {
+
+            .opportunity-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .candidate-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .opportunity-hero {
+                padding: 60px 0 55px;
+            }
+
+            .opportunity-hero h1 {
+                font-size: 2.6rem;
+            }
+
+            .apply-box {
+                padding: 30px 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+
+        <a href="index.html"
+           class="lab-brand">
+
+            <div class="logo-box">
+
+                <img src="lignobio-logo.png"
+                     alt="LignoBio Lab Logo"
+                     class="lab-logo">
+
+            </div>
+
+
+            <div class="lab-name">
+
+                <strong>
+                    LignoBio Lab
+                </strong>
+
+                <span>
+                    Lignocellulose & Biofuel Research Laboratory
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    Research
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="people.html">
+                    People
+                </a>
+            </li>
+
+            <li>
+                <a href="publications.html">
+                    Publications
+                </a>
+            </li>
+
+            <li>
+                <a href="opportunities.html"
+                   class="active-link">
+                    Opportunities
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="opportunity-hero">
+
+    <div class="container">
+
+        <span>
+            Join LignoBio Lab
+        </span>
+
+        <h1>
+            Opportunities
+        </h1>
+
+        <p>
+            We welcome motivated students, early-career
+            researchers and collaborators interested in
+            lignocellulosic biomass valorisation, enzyme
+            technology, biofuels, biocatalysis, environmental
+            biotechnology and sustainable biorefineries.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="join-intro">
+
+            <h2>
+                Learn, Explore and Build Sustainable Technologies
+            </h2>
+
+            <p>
+                Research in LignoBio Lab combines fundamental
+                biochemistry and enzymology with applied
+                biotechnology and bioprocess development.
+                Students are encouraged to understand the
+                underlying science while developing practical
+                solutions for sustainable utilisation of
+                renewable biological resources.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     OPPORTUNITY TYPES
+===================================================== -->
+
+<section class="section opportunity-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Work With Us
+            </span>
+
+            <h2>
+                Research Opportunities
+            </h2>
+
+            <p>
+                Opportunities may depend on available projects,
+                institutional regulations, supervision capacity
+                and research facilities.
+            </p>
+
+        </div>
+
+
+        <div class="opportunity-grid">
+
+
+            <!-- PHD -->
+
+            <article class="opportunity-card">
+
+                <span>
+                    Doctoral Research
+                </span>
+
+                <h3>
+                    PhD Research
+                </h3>
+
+                <p>
+                    Prospective doctoral researchers interested
+                    in the laboratory's core research areas are
+                    encouraged to explore opportunities through
+                    the appropriate university admission and
+                    research procedures.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Lignocellulosic biomass valorisation
+                    </li>
+
+                    <li>
+                        Biofuel and biorefinery development
+                    </li>
+
+                    <li>
+                        Enzyme technology and biocatalysis
+                    </li>
+
+                    <li>
+                        Biomass-derived functional materials
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- MSc -->
+
+            <article class="opportunity-card">
+
+                <span>
+                    Postgraduate Research
+                </span>
+
+                <h3>
+                    Master's Dissertation & Projects
+                </h3>
+
+                <p>
+                    Postgraduate students may undertake
+                    dissertation or research projects aligned
+                    with ongoing laboratory activities and
+                    available supervision.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Experimental biochemistry
+                    </li>
+
+                    <li>
+                        Enzyme technology
+                    </li>
+
+                    <li>
+                        Biomass processing
+                    </li>
+
+                    <li>
+                        Fermentation biotechnology
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- INTERNSHIP -->
+
+            <article class="opportunity-card">
+
+                <span>
+                    Research Training
+                </span>
+
+                <h3>
+                    Research Internships
+                </h3>
+
+                <p>
+                    Short-term research training may be considered
+                    for motivated students seeking exposure to
+                    laboratory research in biomass biotechnology
+                    and enzymology.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Literature-based research training
+                    </li>
+
+                    <li>
+                        Laboratory techniques
+                    </li>
+
+                    <li>
+                        Scientific data interpretation
+                    </li>
+
+                    <li>
+                        Research writing
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- COLLABORATION -->
+
+            <article class="opportunity-card">
+
+                <span>
+                    Scientific Partnership
+                </span>
+
+                <h3>
+                    Research Collaboration
+                </h3>
+
+                <p>
+                    We welcome complementary collaborations
+                    with researchers and institutions working
+                    in biomass chemistry, catalysis, materials,
+                    environmental science, biotechnology
+                    and sustainable process engineering.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Joint research projects
+                    </li>
+
+                    <li>
+                        Collaborative publications
+                    </li>
+
+                    <li>
+                        Advanced analytical characterisation
+                    </li>
+
+                    <li>
+                        International scientific collaboration
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- VISITING RESEARCHERS -->
+
+            <article class="opportunity-card">
+
+                <span>
+                    Academic Exchange
+                </span>
+
+                <h3>
+                    Visiting Researchers
+                </h3>
+
+                <p>
+                    We are interested in academic exchanges and
+                    short research interactions that provide
+                    complementary expertise and strengthen
+                    interdisciplinary research.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Visiting researchers
+                    </li>
+
+                    <li>
+                        Faculty collaboration
+                    </li>
+
+                    <li>
+                        Method development
+                    </li>
+
+                    <li>
+                        Joint student mentoring
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+
+            <!-- NEW IDEAS -->
+
+            <article class="opportunity-card">
+
+                <span>
+                    Emerging Research
+                </span>
+
+                <h3>
+                    New Research Ideas
+                </h3>
+
+                <p>
+                    We are particularly interested in researchers
+                    who can connect traditional biomass conversion
+                    with emerging areas of sustainable materials,
+                    catalytic biorefineries, data-driven
+                    biotechnology and circular bioeconomy.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Lignin-derived materials
+                    </li>
+
+                    <li>
+                        Advanced biocatalysis
+                    </li>
+
+                    <li>
+                        Data-driven bioprocessing
+                    </li>
+
+                    <li>
+                        TEA and LCA integration
+                    </li>
+
+                </ul>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     RESEARCH INTERESTS
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Areas of Interest
+            </span>
+
+            <h2>
+                Topics We Are Interested In
+            </h2>
+
+        </div>
+
+
+        <div class="interest-grid">
+
+            <span>
+                Lignocellulosic Biomass
+            </span>
+
+            <span>
+                Biomass Pretreatment
+            </span>
+
+            <span>
+                Deep Eutectic Solvents
+            </span>
+
+            <span>
+                Cellulase
+            </span>
+
+            <span>
+                Xylanase
+            </span>
+
+            <span>
+                Laccase
+            </span>
+
+            <span>
+                Enzyme Immobilisation
+            </span>
+
+            <span>
+                Nanobiocatalysis
+            </span>
+
+            <span>
+                2G Bioethanol
+            </span>
+
+            <span>
+                Fermentation
+            </span>
+
+            <span>
+                Lignin Valorisation
+            </span>
+
+            <span>
+                Nanocellulose
+            </span>
+
+            <span>
+                Nanolignin
+            </span>
+
+            <span>
+                Functional Materials
+            </span>
+
+            <span>
+                Environmental Remediation
+            </span>
+
+            <span>
+                Sustainable Biorefineries
+            </span>
+
+            <span>
+                Techno-Economic Analysis
+            </span>
+
+            <span>
+                Life-Cycle Assessment
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WHAT WE VALUE
+===================================================== -->
+
+<section class="section candidate-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Research Culture
+            </span>
+
+            <h2>
+                What We Value
+            </h2>
+
+        </div>
+
+
+        <div class="candidate-grid">
+
+
+            <div class="candidate-card">
+
+                <h3>
+                    Scientific Curiosity
+                </h3>
+
+                <p>
+                    A willingness to ask meaningful questions,
+                    understand mechanisms and explore ideas
+                    beyond routine experimentation.
+                </p>
+
+            </div>
+
+
+            <div class="candidate-card">
+
+                <h3>
+                    Research Integrity
+                </h3>
+
+                <p>
+                    Careful experimentation, transparent
+                    documentation, responsible data handling
+                    and respect for scientific ethics.
+                </p>
+
+            </div>
+
+
+            <div class="candidate-card">
+
+                <h3>
+                    Collaborative Thinking
+                </h3>
+
+                <p>
+                    An ability to learn from different disciplines,
+                    share expertise and contribute constructively
+                    to collaborative research.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT CTA
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="apply-box">
+
+            <span>
+                Interested?
+            </span>
+
+            <h2>
+                Start a Conversation
+            </h2>
+
+            <p>
+                If your research interests overlap with those
+                of LignoBio Lab, you are welcome to contact us
+                with a concise description of your academic
+                background, research interests and the type
+                of opportunity you are seeking.
+            </p>
+
+            <a href="index.html#contact"
+               class="btn btn-primary">
+
+                Contact LignoBio Lab
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    LignoBio Lab
+                </h3>
+
+                <p>
+                    Lignocellulose & Biofuel Research Laboratory
+                    <br>
+                    Department of Biosciences
+                    <br>
+                    Integral University
+                    <br>
+                    Lucknow, Uttar Pradesh, India
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <p>
+
+                    <a href="research.html">
+                        Research
+                    </a>
+
+                    <br>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <br>
+
+                    <a href="people.html">
+                        People
+                    </a>
+
+                    <br>
+
+                    <a href="publications.html">
+                        Publications
+                    </a>
+
+                    <br>
+
+                    <a href="opportunities.html">
+                        Opportunities
+                    </a>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 LignoBio Lab.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
