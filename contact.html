@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Contact LignoBio Lab, Lignocellulose & Biofuel Research Laboratory, Department of Biosciences, Integral University, Lucknow, India.">
+
+    <title>
+        Contact | LignoBio Lab
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .contact-hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #12372a 0%,
+                    #1c4d3a 100%
+                );
+
+            color: white;
+
+            padding: 90px 0 80px;
+        }
+
+        .contact-hero span {
+            display: inline-block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2.5px;
+
+            font-size: 0.8rem;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .contact-hero h1 {
+            font-size: 3.5rem;
+
+            line-height: 1.1;
+
+            margin-bottom: 18px;
+        }
+
+        .contact-hero p {
+            max-width: 850px;
+
+            color: #e4eee7;
+
+            font-size: 1.15rem;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           CONTACT GRID
+        ====================================================== */
+
+        .contact-grid {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 35px;
+
+            align-items: stretch;
+        }
+
+
+        .contact-card {
+            background: white;
+
+            padding: 32px;
+
+            border-radius: 10px;
+
+            border-top: 5px solid #5f8068;
+
+            box-shadow:
+                0 7px 24px
+                rgba(20, 55, 42, 0.07);
+        }
+
+
+        .contact-card span {
+            display: block;
+
+            color: #66816d;
+
+            text-transform: uppercase;
+
+            letter-spacing: 1.5px;
+
+            font-size: 0.75rem;
+            font-weight: 700;
+
+            margin-bottom: 10px;
+        }
+
+
+        .contact-card h2 {
+            color: #173b2d;
+
+            font-size: 1.55rem;
+
+            margin-bottom: 18px;
+        }
+
+
+        .contact-card p {
+            color: #5d6962;
+
+            line-height: 1.8;
+
+            margin-bottom: 10px;
+        }
+
+
+        .contact-card a {
+            color: #31533f;
+
+            text-decoration: none;
+
+            font-weight: 600;
+        }
+
+
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =====================================================
+           CONTACT INFORMATION
+        ====================================================== */
+
+        .contact-item {
+            padding: 17px 0;
+
+            border-bottom: 1px solid #e0e6e0;
+        }
+
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+
+        .contact-item strong {
+            display: block;
+
+            color: #173b2d;
+
+            margin-bottom: 4px;
+        }
+
+
+        .contact-note {
+            font-size: 0.82rem;
+
+            color: #7a857e;
+
+            margin-top: 4px;
+        }
+
+
+        /* =====================================================
+           ENQUIRY TYPES
+        ====================================================== */
+
+        .enquiry-section {
+            background: #f5f8f4;
+        }
+
+
+        .enquiry-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+
+        .enquiry-card {
+            background: white;
+
+            padding: 26px;
+
+            border-radius: 8px;
+
+            border-left: 4px solid #64816d;
+        }
+
+
+        .enquiry-card h3 {
+            color: #173b2d;
+
+            margin-bottom: 10px;
+        }
+
+
+        .enquiry-card p {
+            color: #606d65;
+
+            line-height: 1.7;
+
+            font-size: 0.92rem;
+        }
+
+
+        /* =====================================================
+           PROFILE LINKS
+        ====================================================== */
+
+        .profile-section-contact {
+            background: #edf4e8;
+        }
+
+
+        .contact-profiles {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            margin-top: 25px;
+        }
+
+
+        .contact-profile-button {
+            display: inline-block;
+
+            text-decoration: none;
+
+            border: 1px solid #6e8876;
+
+            color: #31533f;
+
+            background: white;
+
+            padding: 10px 17px;
+
+            border-radius: 5px;
+
+            font-size: 0.85rem;
+
+            font-weight: 600;
+        }
+
+
+        .contact-profile-button:hover {
+            background: #173b2d;
+
+            color: white;
+        }
+
+
+        /* =====================================================
+           PRIMARY CONTACT BOX
+        ====================================================== */
+
+        .primary-contact-box {
+            background: #173b2d;
+
+            color: white;
+
+            padding: 45px;
+
+            border-radius: 10px;
+
+            text-align: center;
+        }
+
+
+        .primary-contact-box span {
+            display: block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 0.77rem;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+
+        .primary-contact-box h2 {
+            font-size: 2.3rem;
+
+            margin-bottom: 14px;
+        }
+
+
+        .primary-contact-box p {
+            max-width: 760px;
+
+            margin: 0 auto 25px;
+
+            color: #dfe9e2;
+
+            line-height: 1.75;
+        }
+
+
+        .email-button {
+            display: inline-block;
+
+            padding: 12px 22px;
+
+            background: #d7e7c3;
+
+            color: #173b2d;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            font-weight: 700;
+        }
+
+
+        .email-button:hover {
+            opacity: 0.9;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 850px) {
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .enquiry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-hero {
+                padding: 60px 0 55px;
+            }
+
+            .contact-hero h1 {
+                font-size: 2.6rem;
+            }
+
+            .primary-contact-box {
+                padding: 30px 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+
+        <a href="index.html"
+           class="lab-brand">
+
+            <div class="logo-box">
+
+                <img src="lignobio-logo.png"
+                     alt="LignoBio Lab Logo"
+                     class="lab-logo">
+
+            </div>
+
+
+            <div class="lab-name">
+
+                <strong>
+                    LignoBio Lab
+                </strong>
+
+                <span>
+                    Lignocellulose & Biofuel Research Laboratory
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    Research
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="people.html">
+                    People
+                </a>
+            </li>
+
+            <li>
+                <a href="publications.html">
+                    Publications
+                </a>
+            </li>
+
+            <li>
+                <a href="opportunities.html">
+                    Opportunities
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html"
+                   class="active-link">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="contact-hero">
+
+    <div class="container">
+
+        <span>
+            Get in Touch
+        </span>
+
+        <h1>
+            Contact
+        </h1>
+
+        <p>
+            We welcome enquiries from researchers, students,
+            academic institutions and potential collaborators
+            interested in lignocellulosic biomass valorisation,
+            biofuels, enzyme technology, biocatalysis,
+            environmental biotechnology and sustainable
+            biorefineries.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAIN CONTACT INFORMATION
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+
+            <!-- LAB ADDRESS -->
+
+            <div class="contact-card">
+
+                <span>
+                    Laboratory
+                </span>
+
+                <h2>
+                    LignoBio Lab
+                </h2>
+
+                <p>
+                    <strong>
+                        Lignocellulose & Biofuel Research Laboratory
+                    </strong>
+                </p>
+
+                <p>
+                    Department of Biosciences
+                    <br>
+                    Integral University
+                    <br>
+                    Lucknow, Uttar Pradesh
+                    <br>
+                    India
+                </p>
+
+            </div>
+
+
+
+            <!-- PI CONTACT -->
+
+            <div class="contact-card">
+
+                <span>
+                    Principal Investigator
+                </span>
+
+                <h2>
+                    Dr. Mohammad Ashfaque
+                </h2>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Institutional Email
+                    </strong>
+
+                    <a href="mailto:mdashfaque@iul.ac.in">
+                        mdashfaque@iul.ac.in
+                    </a>
+
+                    <div class="contact-note">
+                        Preferred for academic and institutional correspondence
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Alternate Email
+                    </strong>
+
+                    <a href="mailto:mohdashfaquekhan@rediffmail.com">
+                        mohdashfaquekhan@rediffmail.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <strong>
+                        Phone
+                    </strong>
+
+                    <a href="tel:+919839988597">
+                        +91 98399 88597
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ENQUIRIES
+===================================================== -->
+
+<section class="section enquiry-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Contact Us About
+            </span>
+
+            <h2>
+                Research & Academic Enquiries
+            </h2>
+
+            <p>
+                Please include a clear subject line and a concise
+                description of your purpose when contacting the lab.
+            </p>
+
+        </div>
+
+
+        <div class="enquiry-grid">
+
+
+            <div class="enquiry-card">
+
+                <h3>
+                    Research Collaboration
+                </h3>
+
+                <p>
+                    Enquiries regarding joint research,
+                    complementary expertise, collaborative
+                    publications and institutional partnerships.
+                </p>
+
+            </div>
+
+
+            <div class="enquiry-card">
+
+                <h3>
+                    PhD & Research Training
+                </h3>
+
+                <p>
+                    Enquiries from prospective researchers
+                    interested in biomass biotechnology,
+                    enzymes, biofuels and related research areas.
+                </p>
+
+            </div>
+
+
+            <div class="enquiry-card">
+
+                <h3>
+                    Academic Interaction
+                </h3>
+
+                <p>
+                    Invitations, seminars, workshops,
+                    research discussions and academic
+                    networking opportunities.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SCHOLARLY PROFILES
+===================================================== -->
+
+<section class="section profile-section-contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Academic Profiles
+            </span>
+
+            <h2>
+                Connect Online
+            </h2>
+
+            <p>
+                Explore publications, citation records
+                and professional activities through
+                these academic profiles.
+            </p>
+
+        </div>
+
+
+        <div class="contact-profiles">
+
+
+            <a href="https://scholar.google.com/citations?user=6ZUxCywAAAAJ&hl=en"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-profile-button">
+
+                Google Scholar
+
+            </a>
+
+
+            <a href="https://orcid.org/0000-0003-2720-2115"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-profile-button">
+
+                ORCID
+
+            </a>
+
+
+            <a href="https://www.researchgate.net/profile/Mohammad-Ashfaque?ev=hdr_xprf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-profile-button">
+
+                ResearchGate
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/mohammad-ashfaque-khan-70279617/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-profile-button">
+
+                LinkedIn
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PRIMARY EMAIL CTA
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="primary-contact-box">
+
+            <span>
+                Research Enquiries
+            </span>
+
+            <h2>
+                Start a Conversation
+            </h2>
+
+            <p>
+                For research collaborations, academic enquiries
+                and prospective research opportunities, email
+                the Principal Investigator with a brief
+                introduction and a clear description of the
+                proposed interaction.
+            </p>
+
+
+            <a href="mailto:mdashfaque@iul.ac.in"
+               class="email-button">
+
+                Email Dr. Mohammad Ashfaque
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    LignoBio Lab
+                </h3>
+
+                <p>
+                    Lignocellulose & Biofuel Research Laboratory
+                    <br>
+                    Department of Biosciences
+                    <br>
+                    Integral University
+                    <br>
+                    Lucknow, Uttar Pradesh, India
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+
+                    <a href="mailto:mdashfaque@iul.ac.in">
+                        mdashfaque@iul.ac.in
+                    </a>
+
+                    <br>
+
+                    <a href="tel:+919839988597">
+                        +91 98399 88597
+                    </a>
+
+                    <br>
+
+                    <a href="contact.html">
+                        Contact Page
+                    </a>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 LignoBio Lab.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
