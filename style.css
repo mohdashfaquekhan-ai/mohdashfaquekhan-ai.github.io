@@ -1486,3 +1486,143 @@ footer a {
     }
 
 }
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1;
+    padding: 8px 11px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE MENU
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .navbar {
+        position: relative;
+        width: 92%;
+        min-height: 76px;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        background: #12372a;
+
+        padding: 12px 0;
+
+        border-top: 1px solid
+            rgba(255, 255, 255, 0.15);
+
+        box-shadow:
+            0 10px 20px
+            rgba(0, 0, 0, 0.18);
+
+        z-index: 9999;
+    }
+
+
+    .nav-links.show {
+        display: flex;
+    }
+
+
+    .nav-links li {
+        width: 100%;
+    }
+
+
+    .nav-links a {
+        display: block;
+
+        width: 100%;
+
+        padding: 13px 22px;
+
+        text-align: left;
+    }
+
+
+    .nav-links a:hover {
+        background:
+            rgba(255, 255, 255, 0.08);
+    }
+
+
+    .nav-links .active-link {
+        background:
+            rgba(255, 255, 255, 0.10);
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .logo-box {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .lab-logo {
+        width: 46px;
+        height: 46px;
+    }
+
+
+    .lab-name strong {
+        font-size: 1.05rem;
+    }
+
+
+    .lab-name span {
+        font-size: 0.64rem;
+        line-height: 1.25;
+        max-width: 180px;
+    }
+
+
+    .menu-toggle {
+        font-size: 1.4rem;
+        padding: 7px 9px;
+    }
+
+}
