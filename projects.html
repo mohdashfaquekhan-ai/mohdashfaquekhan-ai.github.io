@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Research projects and scientific capabilities of LignoBio Lab, including lignocellulosic biomass pretreatment, bioethanol, enzyme technology, nanobiocatalysis, lignin valorisation and integrated biorefineries.">
+
+    <meta name="keywords"
+          content="LignoBio Lab, lignocellulosic biomass, bioethanol, biomass pretreatment, enzyme technology, lignin valorisation, nanobiocatalysis, sustainable biorefinery">
+
+    <title>
+        Projects & Capabilities | LignoBio Lab
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+        /* =====================================================
+           HERO
+        ====================================================== */
+
+        .project-hero {
+            background:
+                linear-gradient(
+                    135deg,
+                    #12372a 0%,
+                    #1c4d3a 100%
+                );
+
+            color: white;
+
+            padding: 90px 0 80px;
+        }
+
+        .project-hero span {
+            display: inline-block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2.5px;
+
+            font-size: 0.8rem;
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .project-hero h1 {
+            font-size: 3.5rem;
+
+            line-height: 1.1;
+
+            margin-bottom: 18px;
+        }
+
+        .project-hero p {
+            max-width: 880px;
+
+            color: #e4eee7;
+
+            font-size: 1.15rem;
+
+            line-height: 1.8;
+        }
+
+
+        /* =====================================================
+           INTRO
+        ====================================================== */
+
+        .project-intro {
+            display: grid;
+
+            grid-template-columns: 0.9fr 1.3fr;
+
+            gap: 65px;
+
+            align-items: start;
+        }
+
+        .project-intro-heading span {
+            display: block;
+
+            color: #63806b;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 0.78rem;
+            font-weight: 700;
+
+            margin-bottom: 10px;
+        }
+
+        .project-intro-heading h2 {
+            color: #173b2d;
+
+            font-size: 2.3rem;
+
+            line-height: 1.25;
+        }
+
+        .project-intro-text p {
+            color: #59675f;
+
+            line-height: 1.8;
+
+            margin-bottom: 18px;
+        }
+
+
+        /* =====================================================
+           FLAGSHIP PROJECTS
+        ====================================================== */
+
+        .projects-section {
+            background: #f4f7f3;
+        }
+
+        .projects-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 28px;
+        }
+
+        .project-card {
+            background: white;
+
+            padding: 32px;
+
+            border-radius: 10px;
+
+            border-top: 5px solid #587761;
+
+            box-shadow:
+                0 7px 24px
+                rgba(20, 55, 42, 0.07);
+
+            display: flex;
+
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 13px 30px
+                rgba(20, 55, 42, 0.11);
+        }
+
+        .project-number {
+            display: inline-block;
+
+            align-self: flex-start;
+
+            background: #173b2d;
+
+            color: white;
+
+            padding: 5px 11px;
+
+            border-radius: 20px;
+
+            font-size: 0.75rem;
+            font-weight: 700;
+
+            margin-bottom: 17px;
+        }
+
+        .project-card h3 {
+            color: #173b2d;
+
+            font-size: 1.45rem;
+
+            line-height: 1.35;
+
+            margin-bottom: 14px;
+        }
+
+        .project-card p {
+            color: #5e6b64;
+
+            line-height: 1.75;
+
+            margin-bottom: 20px;
+        }
+
+        .project-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+
+            margin-top: auto;
+        }
+
+        .project-tags span {
+            background: #edf3ea;
+
+            color: #365644;
+
+            border: 1px solid #d8e2d5;
+
+            border-radius: 20px;
+
+            padding: 7px 11px;
+
+            font-size: 0.76rem;
+        }
+
+
+        /* =====================================================
+           CAPABILITIES
+        ====================================================== */
+
+        .capabilities-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .capability-card {
+            background: #ffffff;
+
+            border: 1px solid #dde5dd;
+
+            padding: 25px;
+
+            border-radius: 8px;
+
+            min-height: 180px;
+        }
+
+        .capability-card span {
+            display: block;
+
+            color: #6c8975;
+
+            font-size: 0.75rem;
+
+            font-weight: 700;
+
+            letter-spacing: 1.3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 10px;
+        }
+
+        .capability-card h3 {
+            color: #173b2d;
+
+            font-size: 1.15rem;
+
+            margin-bottom: 10px;
+        }
+
+        .capability-card p {
+            color: #647169;
+
+            font-size: 0.9rem;
+
+            line-height: 1.65;
+        }
+
+
+        /* =====================================================
+           WORKFLOW
+        ====================================================== */
+
+        .workflow-section {
+            background: #edf4e8;
+        }
+
+        .workflow {
+            display: grid;
+
+            grid-template-columns:
+                1fr auto
+                1fr auto
+                1fr auto
+                1fr auto
+                1fr;
+
+            gap: 10px;
+
+            align-items: center;
+
+            margin-top: 40px;
+        }
+
+        .workflow-box {
+            background: #173b2d;
+
+            color: white;
+
+            padding: 18px;
+
+            min-height: 105px;
+
+            border-radius: 7px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            font-weight: 650;
+        }
+
+        .workflow-arrow {
+            color: #66836e;
+
+            font-size: 1.7rem;
+
+            font-weight: 700;
+        }
+
+
+        /* =====================================================
+           COLLABORATION
+        ====================================================== */
+
+        .collaboration-box {
+            background: #173b2d;
+
+            color: white;
+
+            border-radius: 10px;
+
+            padding: 45px;
+
+            text-align: center;
+        }
+
+        .collaboration-box span {
+            display: block;
+
+            color: #cfe3ba;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+
+            font-size: 0.77rem;
+
+            font-weight: 700;
+
+            margin-bottom: 12px;
+        }
+
+        .collaboration-box h2 {
+            font-size: 2.25rem;
+
+            margin-bottom: 15px;
+        }
+
+        .collaboration-box p {
+            max-width: 800px;
+
+            margin: 0 auto 27px;
+
+            color: #dfe9e2;
+
+            line-height: 1.75;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ====================================================== */
+
+        @media (max-width: 900px) {
+
+            .project-intro {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .capabilities-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .workflow {
+                grid-template-columns: 1fr;
+            }
+
+            .workflow-arrow {
+                text-align: center;
+
+                transform: rotate(90deg);
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .project-hero {
+                padding: 60px 0 55px;
+            }
+
+            .project-hero h1 {
+                font-size: 2.55rem;
+            }
+
+            .capabilities-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                padding: 25px;
+            }
+
+            .collaboration-box {
+                padding: 30px 22px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html"
+           class="lab-brand">
+
+            <div class="logo-box">
+
+                <img src="lignobio-logo.png"
+                     alt="LignoBio Lab Logo"
+                     class="lab-logo">
+
+            </div>
+
+
+            <div class="lab-name">
+
+                <strong>
+                    LignoBio Lab
+                </strong>
+
+                <span>
+                    Lignocellulose & Biofuel Research Laboratory
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="research.html">
+                    Research
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html"
+                   class="active-link">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="people.html">
+                    People
+                </a>
+            </li>
+
+            <li>
+                <a href="publications.html">
+                    Publications
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="project-hero">
+
+    <div class="container">
+
+        <span>
+            Research in Action
+        </span>
+
+        <h1>
+            Projects & Capabilities
+        </h1>
+
+        <p>
+            Our research programme integrates biomass
+            pretreatment, enzymology, microbial biotechnology,
+            fermentation, nanobiocatalysis, materials development
+            and sustainability assessment to create value from
+            lignocellulosic resources.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     INTRODUCTION
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="project-intro">
+
+
+            <div class="project-intro-heading">
+
+                <span>
+                    Integrated Research Programme
+                </span>
+
+                <h2>
+                    Connecting Fundamental Biochemistry
+                    with Sustainable Biorefinery Development
+                </h2>
+
+            </div>
+
+
+            <div class="project-intro-text">
+
+                <p>
+                    LignoBio Lab investigates lignocellulosic
+                    biomass as a renewable platform for producing
+                    fuels, enzymes, chemicals and functional
+                    materials.
+                </p>
+
+                <p>
+                    Our projects are designed to address different
+                    stages of the biomass conversion chain,
+                    including feedstock pretreatment, enzymatic
+                    deconstruction, fermentation, recovery of
+                    individual biomass fractions and development
+                    of value-added products.
+                </p>
+
+                <p>
+                    An important emerging objective is to integrate
+                    these operations into complete biorefinery
+                    systems that maximise resource utilisation
+                    while considering economic and environmental
+                    sustainability.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FLAGSHIP PROJECTS
+===================================================== -->
+
+<section class="section projects-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                Flagship Programmes
+            </span>
+
+            <h2>
+                Major Research Projects
+            </h2>
+
+            <p>
+                Representative research programmes that define
+                the current and emerging scientific direction
+                of LignoBio Lab.
+            </p>
+
+        </div>
+
+
+        <div class="projects-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 01
+                </span>
+
+                <h3>
+                    Integrated Pretreatment of
+                    Lignocellulosic Biomass
+                </h3>
+
+                <p>
+                    Development of chemical, microwave-assisted,
+                    surfactant-assisted and deep eutectic
+                    solvent-based strategies for improving
+                    delignification, fractionation and enzyme
+                    accessibility of agricultural residues.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Alkali</span>
+                    <span>Microwave</span>
+                    <span>Surfactants</span>
+                    <span>DES</span>
+                    <span>Delignification</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 2 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 02
+                </span>
+
+                <h3>
+                    Second-Generation Bioethanol
+                    from Agricultural Residues
+                </h3>
+
+                <p>
+                    Integration of biomass pretreatment,
+                    enzymatic saccharification and microbial
+                    fermentation for improving fermentable-sugar
+                    recovery and bioethanol production from
+                    non-food lignocellulosic feedstocks.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>2G Bioethanol</span>
+                    <span>Saccharification</span>
+                    <span>Fermentation</span>
+                    <span>SSF</span>
+                    <span>Process Optimisation</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 3 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 03
+                </span>
+
+                <h3>
+                    Microbial Enzymes for
+                    Biomass Deconstruction
+                </h3>
+
+                <p>
+                    Production, optimisation and application
+                    of plant cell wall degrading enzymes,
+                    including cellulases, xylanases and
+                    pectinases, for improved deconstruction
+                    of complex lignocellulosic substrates.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Cellulase</span>
+                    <span>Xylanase</span>
+                    <span>Pectinase</span>
+                    <span>PCWDEs</span>
+                    <span>Biocatalysis</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 4 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 04
+                </span>
+
+                <h3>
+                    Enzyme Immobilisation &
+                    Nanobiocatalysis
+                </h3>
+
+                <p>
+                    Development of immobilised and nano-enabled
+                    enzyme systems to improve catalytic stability,
+                    recyclability and performance during biomass
+                    hydrolysis and environmental remediation.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Immobilisation</span>
+                    <span>Nanobiocatalyst</span>
+                    <span>Laccase</span>
+                    <span>Enzyme Stability</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 5 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 05
+                </span>
+
+                <h3>
+                    Lignin & Cellulose-Derived
+                    Functional Materials
+                </h3>
+
+                <p>
+                    Exploration of lignin and cellulose fractions
+                    as renewable precursors for nanomaterials,
+                    adsorbents and functional materials with
+                    potential applications in environmental
+                    remediation and sustainable material systems.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Lignin</span>
+                    <span>Nanocellulose</span>
+                    <span>Nanolignin</span>
+                    <span>Adsorbents</span>
+                    <span>Functional Materials</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 6 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 06
+                </span>
+
+                <h3>
+                    Integrated Sugar Beet Bagasse
+                    Biorefinery
+                </h3>
+
+                <p>
+                    Development of an integrated valorisation
+                    strategy for sugar beet bagasse combining
+                    bioethanol production with recovery and
+                    utilisation of residual biomass fractions
+                    for functional environmental materials.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Sugar Beet Bagasse</span>
+                    <span>Bioethanol</span>
+                    <span>Lignin</span>
+                    <span>Functional Materials</span>
+                    <span>Remediation</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 7 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 07
+                </span>
+
+                <h3>
+                    Laccase-Based Environmental
+                    Biotechnology
+                </h3>
+
+                <p>
+                    Application of free, immobilised and
+                    nano-enabled laccase systems for degradation
+                    of synthetic dyes and development of
+                    sustainable strategies for wastewater
+                    remediation.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Laccase</span>
+                    <span>Dye Degradation</span>
+                    <span>Wastewater</span>
+                    <span>Bioremediation</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROJECT 8 -->
+
+            <article class="project-card">
+
+                <span class="project-number">
+                    PROJECT 08
+                </span>
+
+                <h3>
+                    Sustainable Biorefinery Assessment
+                </h3>
+
+                <p>
+                    Integration of experimental biomass processing
+                    with process modelling, material balance,
+                    techno-economic analysis and life-cycle
+                    perspectives to identify scalable and
+                    sustainable conversion pathways.
+                </p>
+
+                <div class="project-tags">
+
+                    <span>TEA</span>
+                    <span>LCA</span>
+                    <span>Mass Balance</span>
+                    <span>Process Modelling</span>
+                    <span>Scale-Up</span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CAPABILITIES
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                What We Do
+            </span>
+
+            <h2>
+                Research Capabilities
+            </h2>
+
+            <p>
+                Experimental and analytical capabilities
+                supporting our biomass, enzyme and
+                biorefinery research programme.
+            </p>
+
+        </div>
+
+
+        <div class="capabilities-grid">
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 01
+                </span>
+
+                <h3>
+                    Biomass Pretreatment
+                </h3>
+
+                <p>
+                    Chemical, alkaline, microwave-assisted,
+                    surfactant-assisted and solvent-based
+                    biomass processing.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 02
+                </span>
+
+                <h3>
+                    Biomass Compositional Analysis
+                </h3>
+
+                <p>
+                    Evaluation of cellulose, hemicellulose,
+                    lignin and related structural changes
+                    during biomass conversion.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 03
+                </span>
+
+                <h3>
+                    Microbial Enzyme Production
+                </h3>
+
+                <p>
+                    Production and optimisation of cellulase,
+                    xylanase, pectinase, laccase and related
+                    industrial enzymes.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 04
+                </span>
+
+                <h3>
+                    Enzyme Characterisation
+                </h3>
+
+                <p>
+                    Enzyme activity analysis, optimisation,
+                    stability assessment and kinetic
+                    characterisation.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 05
+                </span>
+
+                <h3>
+                    Enzyme Immobilisation
+                </h3>
+
+                <p>
+                    Immobilisation of enzymes in matrices
+                    and development of reusable
+                    biocatalytic systems.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 06
+                </span>
+
+                <h3>
+                    Enzymatic Saccharification
+                </h3>
+
+                <p>
+                    Evaluation and optimisation of enzymatic
+                    hydrolysis for conversion of structural
+                    carbohydrates into fermentable sugars.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 07
+                </span>
+
+                <h3>
+                    Fermentation & Bioethanol
+                </h3>
+
+                <p>
+                    Fermentation process development,
+                    simultaneous saccharification and
+                    fermentation and bioethanol optimisation.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 08
+                </span>
+
+                <h3>
+                    Statistical Process Optimisation
+                </h3>
+
+                <p>
+                    Application of response-surface
+                    methodologies, experimental design and
+                    statistical modelling to bioprocess optimisation.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 09
+                </span>
+
+                <h3>
+                    Biomass Structural Characterisation
+                </h3>
+
+                <p>
+                    Interpretation of biomass structural
+                    transformations using complementary
+                    microscopic, spectroscopic and
+                    diffraction approaches.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 10
+                </span>
+
+                <h3>
+                    Environmental Biocatalysis
+                </h3>
+
+                <p>
+                    Enzyme-based degradation of pollutants
+                    and development of biological systems
+                    for environmental remediation.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 11
+                </span>
+
+                <h3>
+                    Techno-Economic Assessment
+                </h3>
+
+                <p>
+                    Process-flow development, mass-balance
+                    interpretation and assessment of
+                    economic feasibility for biomass conversion.
+                </p>
+
+            </div>
+
+
+            <div class="capability-card">
+
+                <span>
+                    Capability 12
+                </span>
+
+                <h3>
+                    Life-Cycle Thinking
+                </h3>
+
+                <p>
+                    Integration of sustainability considerations
+                    into process evaluation and development
+                    of circular biorefinery strategies.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WORKFLOW
+===================================================== -->
+
+<section class="section workflow-section">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>
+                How We Work
+            </span>
+
+            <h2>
+                Integrated Experimental Workflow
+            </h2>
+
+        </div>
+
+
+        <div class="workflow">
+
+
+            <div class="workflow-box">
+                Feedstock Selection
+            </div>
+
+            <div class="workflow-arrow">
+                →
+            </div>
+
+
+            <div class="workflow-box">
+                Pretreatment & Fractionation
+            </div>
+
+            <div class="workflow-arrow">
+                →
+            </div>
+
+
+            <div class="workflow-box">
+                Enzymatic Conversion
+            </div>
+
+            <div class="workflow-arrow">
+                →
+            </div>
+
+
+            <div class="workflow-box">
+                Fermentation / Material Development
+            </div>
+
+            <div class="workflow-arrow">
+                →
+            </div>
+
+
+            <div class="workflow-box">
+                Process & Sustainability Assessment
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     COLLABORATION
+===================================================== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="collaboration-box">
+
+            <span>
+                Collaboration
+            </span>
+
+            <h2>
+                Interested in Working With LignoBio Lab?
+            </h2>
+
+            <p>
+                We welcome interdisciplinary collaborations
+                involving biomass fractionation, enzyme technology,
+                biofuels, lignin and cellulose valorisation,
+                environmental biotechnology, functional materials
+                and sustainable biorefinery development.
+            </p>
+
+            <a href="index.html#contact"
+               class="btn btn-primary">
+
+                Contact the Lab
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+
+            <div>
+
+                <h3>
+                    LignoBio Lab
+                </h3>
+
+                <p>
+                    Lignocellulose & Biofuel Research Laboratory
+                    <br>
+                    Department of Biosciences
+                    <br>
+                    Integral University
+                    <br>
+                    Lucknow, Uttar Pradesh, India
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Explore
+                </h3>
+
+                <p>
+
+                    <a href="research.html">
+                        Research
+                    </a>
+
+                    <br>
+
+                    <a href="projects.html">
+                        Projects
+                    </a>
+
+                    <br>
+
+                    <a href="people.html">
+                        People
+                    </a>
+
+                    <br>
+
+                    <a href="publications.html">
+                        Publications
+                    </a>
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 LignoBio Lab.
+            All rights reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
